@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>M/J Latin, Beginning &mdash; Lesson 11.02</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .flip-grid { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+    .flip-card { min-width: 150px; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 14px 16px; cursor: pointer; text-align: center; transition: all 0.15s; }
+    .flip-card:hover { border-color: #55C8E8; }
+    .flip-card .front { font-size: 18px; color: #0E1C42; }
+    .flip-card .hint { font-size: 12px; color: #999; margin-top: 4px; }
+    .flip-card .back { display: none; font-size: 15px; color: #1B6A94; margin-top: 8px; border-top: 1px dashed #C5DCE5; padding-top: 8px; }
+    .flip-card.flipped .back { display: block; }
+    .para { border-collapse: collapse; margin: 14px 0; }
+    .para td, .para th { border: 1px solid #C5DCE5; padding: 9px 16px; font-size: 17px; text-align: center; }
+    .para th { background: #0E1C42; color: #fff; font-weight: normal; font-size: 14px; }
+    .para .lab { background: #EEF1F8; color: #0e1c42; }
+    .para .end { color: #c7922c; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">M/J LATIN, BEGINNING</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 11</div>
+        <div style="font-size: 12px; color: #666;">1st Conjugation: Continued</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 11.02</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">We, You All, They</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Time</div>
+        <div style="font-size: 16px; color: #0e1c42;">about 20 minutes</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 11.02</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">We, You All, They</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Can you chant the whole paradigm, start to finish, without stopping?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Yesterday you met the three plural endings. Today you put all six forms together &mdash; singular and plural &mdash; into the <strong>complete present tense paradigm</strong> you'll use for the rest of the year.</div>
+    </div>
+
+    <!-- MEMORY WORK -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 10px;">&#127925; MEMORY WORK</div>
+        <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-bottom: 10px;">Your target is the <strong>complete six-form paradigm</strong> for <em>amō, amāre</em> (to love). Chant it aloud &mdash; singular row first, then plural:</div>
+        <table class="para">
+            <tr><th>Person</th><th>Singular</th><th>Plural</th></tr>
+            <tr><td class="lab">1st &mdash; I / we</td><td>am<span class="end">ō</span></td><td>am<span class="end">āmus</span></td></tr>
+            <tr><td class="lab">2nd &mdash; you / you all</td><td>am<span class="end">ās</span></td><td>am<span class="end">ātis</span></td></tr>
+            <tr><td class="lab">3rd &mdash; he-she-it / they</td><td>am<span class="end">at</span></td><td>am<span class="end">ant</span></td></tr>
+        </table>
+        <div style="font-size: 15px; color: #666; line-height: 1.55;">Say each cell as <strong>person &mdash; number &mdash; ending &mdash; form</strong>: &ldquo;first singular, <em>-ō</em>, amō&hellip; first plural, <em>-āmus</em>, amāmus&hellip; second singular, <em>-ās</em>, amās&hellip; second plural, <em>-ātis</em>, amātis&hellip; third singular, <em>-at</em>, amat&hellip; third plural, <em>-ant</em>, amant.&rdquo; Then say it backwards.</div>
+    </div>
+
+    <!-- OBJECTIVES -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> recite the full six-form present tense paradigm from memory.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> apply the paradigm to every 1st-conjugation verb I know, not just <em>amō</em>.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> name a verb's person and number by reading its ending.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE WHOLE PATTERN</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 6px 0;">Two questions &mdash; <strong>who?</strong> (the row) and <strong>how many?</strong> (the column) &mdash; are answered by a single ending. This is a <strong>paradigm</strong>: a complete, systematic table of a word's forms.</p>
+        <table class="para">
+            <tr><th></th><th>Singular (one)</th><th>Plural (many)</th></tr>
+            <tr><td class="lab">1st person</td><td>am<span class="end">ō</span> &mdash; I love</td><td>am<span class="end">āmus</span> &mdash; we love</td></tr>
+            <tr><td class="lab">2nd person</td><td>am<span class="end">ās</span> &mdash; you love</td><td>am<span class="end">ātis</span> &mdash; you all love</td></tr>
+            <tr><td class="lab">3rd person</td><td>am<span class="end">at</span> &mdash; he/she/it loves</td><td>am<span class="end">ant</span> &mdash; they love</td></tr>
+        </table>
+        <div style="background:#E8F6FB; border-left:5px solid #2196D0; border-radius:6px; padding:12px 16px; font-size:16px; color:#1a2340; line-height:1.6;">&#128161; <strong>Learn it once, use it everywhere.</strong> This same six-form pattern works for every 1st-conjugation verb you know: <em>laudō, portō, habitō, navigō, superō, laborō</em> &mdash; and the new verbs you'll meet later this week. That's already <strong>eight</strong> verbs sharing one paradigm.</div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; TRY THE CHANT</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#128173; QUICK CHECK-IN &middot; NO WRONG ANSWER</div>
+            <div class="widget-question">Try the chant out loud right now, without looking at the table. How did it go?</div>
+            <div class="widget-options">
+                <button data-response="That's the goal &mdash; automatic recall is exactly what lets you read Latin fast later. Keep it warm all week.">Got all six!</button>
+                <button data-response="Totally normal on day one. Say it 5 more times today, forward and backward, and it'll lock in.">Missed one or two</button>
+                <button data-response="No problem &mdash; peek at the table, chant it three times, then try again with the table covered. Repetition is the whole trick.">I need another look</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; NAME THAT FORM</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 4px 0;">Read each ending and give its full label &mdash; <strong>person</strong> and <strong>number</strong>:</p>
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9989; CHECK YOUR UNDERSTANDING</div>
+            <div class="widget-question">Which label fits each form?</div>
+            <div class="widget-row" data-correct="b" data-hint="-āmus = 1st person, more than one.">
+                <div class="widget-row-prompt">portāmus</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Close &mdash; but -āmus is 1st person PLURAL, not 2nd.">2nd plural &mdash; you all carry</button>
+                    <button data-choice="b" data-fb="Right &mdash; -āmus = 1st person plural: we carry.">1st plural &mdash; we carry</button>
+                    <button data-choice="c" data-fb="Look at the ending &mdash; -āmus is plural, not singular.">1st singular &mdash; I carry</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="c" data-hint="-at = 3rd person, singular.">
+                <div class="widget-row-prompt">habitat</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; -at is 3RD person singular, not 1st.">1st singular &mdash; I dwell</button>
+                    <button data-choice="b" data-fb="Careful &mdash; -at is singular; -ant would be 3rd plural.">3rd plural &mdash; they dwell</button>
+                    <button data-choice="c" data-fb="Right &mdash; -at = 3rd person singular: he/she/it dwells.">3rd singular &mdash; he/she dwells</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="a" data-hint="-ant = 3rd person, more than one.">
+                <div class="widget-row-prompt">navigant</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Right &mdash; -ant = 3rd person plural: they sail.">3rd plural &mdash; they sail</button>
+                    <button data-choice="b" data-fb="Look again &mdash; -ant is 3RD person, not 2nd.">2nd plural &mdash; you all sail</button>
+                    <button data-choice="c" data-fb="It's plural &mdash; the -ant ending means more than one.">3rd singular &mdash; he/she sails</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="b" data-hint="-ātis = 2nd person, more than one.">
+                <div class="widget-row-prompt">laborātis</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; -ātis is 2nd person PLURAL (you all), not singular.">2nd singular &mdash; you work</button>
+                    <button data-choice="b" data-fb="Right &mdash; -ātis = 2nd person plural: you all work.">2nd plural &mdash; you all work</button>
+                    <button data-choice="c" data-fb="It's 2nd person, not 1st &mdash; -āmus would be 'we.'">1st plural &mdash; we work</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 11.03 &mdash; Watchers, Wanderers, and Givers</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">New verb vocabulary and the Roman world it describes &mdash; spectators at the games, armies preparing for war, and a culture built on gift-giving.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; ONE IDEA TO CARRY OUT</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Six forms, one pattern: <strong>-ō, -ās, -at, -āmus, -ātis, -ant.</strong> Chant it until it's automatic &mdash; it's the backbone of every 1st-conjugation verb ahead.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; M/J LATIN, BEGINNING &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 11.02 &middot; We, You All, They</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.flip-card').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var flip = e.target.closest('.ow-flip .flip-card');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === row.dataset.correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

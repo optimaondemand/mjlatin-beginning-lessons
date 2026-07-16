@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>M/J Latin, Beginning &mdash; Lesson 4.05</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .flip-grid { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+    .flip-card { min-width: 150px; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 14px 16px; cursor: pointer; text-align: center; transition: all 0.15s; }
+    .flip-card:hover { border-color: #55C8E8; }
+    .flip-card .front { font-size: 18px; color: #0E1C42; }
+    .flip-card .hint { font-size: 12px; color: #999; margin-top: 4px; }
+    .flip-card .back { display: none; font-size: 15px; color: #1B6A94; margin-top: 8px; border-top: 1px dashed #C5DCE5; padding-top: 8px; }
+    .flip-card.flipped .back { display: block; }
+    .para { border-collapse: collapse; margin: 14px 0; }
+    .para td, .para th { border: 1px solid #C5DCE5; padding: 9px 16px; font-size: 17px; text-align: center; }
+    .para th { background: #0E1C42; color: #fff; font-weight: normal; font-size: 14px; }
+    .para .lab { background: #EEF1F8; color: #0e1c42; }
+    .para .end { color: #c7922c; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">M/J LATIN, BEGINNING</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 4</div>
+        <div style="font-size: 12px; color: #666;">The Accusative Case</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 4.05</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Putting It Together</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Time</div>
+        <div style="font-size: 16px; color: #0e1c42;">about 20 minutes</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 4.05</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Putting It Together</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Are you ready for the Module 4 Quiz?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">No new grammar today &mdash; just pulling the week together: the growing paradigm table, the direct object, the five accusative-only prepositions. Read a short passage the Roman way, play the Ludus, and take a self-check.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE WEEK ON ONE PAGE</div>
+        <div style="font-size:16px; color:#0e1c42; margin-bottom:4px;"><strong>The paradigm</strong> &mdash; every 1st-declension noun, singular:</div>
+        <table class="para">
+            <tr><th></th><th>Ending</th><th>Function</th></tr>
+            <tr><td class="lab">Nominative</td><td>-<span class="end">a</span></td><td style="font-size:14px;">Subject; Predicate Nominative</td></tr>
+            <tr><td class="lab">Accusative</td><td>-<span class="end">am</span></td><td style="font-size:14px;">Direct Object; Object of Accusative Preposition</td></tr>
+        </table>
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;">
+            <div style="flex:1; min-width:240px; background:#EEF1F8; border-radius:7px; padding:12px 16px; font-size:16px; color:#1a2340;"><strong>The verb:</strong> <em>amat</em> (loves, likes) always looks for a direct object.</div>
+            <div style="flex:1; min-width:240px; background:#EEF1F8; border-radius:7px; padding:12px 16px; font-size:16px; color:#1a2340;"><strong>The five:</strong> <em>ad, per, trans, ante, post</em> &mdash; always take the accusative.</div>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; READ IT THE ROMAN WAY</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Run the reader's checklist on this short passage. Find each noun, check its case, and confirm its job:</p>
+        <div style="background:#EEF1F8; border-radius:7px; padding:16px 18px; font-size:19px; color:#0e1c42; line-height:1.7; margin-bottom:10px;">
+            Nauta patriam amat. Puella viam amat. Via ad insulam est. Silva post viam est. Femina trans aquam est.
+        </div>
+        <div style="background:#FFFFFF; border:1px solid #D0D9E8; border-left:3px solid #2A9D5C; border-radius:4px; padding:12px 16px; font-size:16px; color:#1a2340; line-height:1.6;">
+            <strong>Read it out:</strong> &ldquo;The sailor loves his homeland. The girl loves the road. The road is toward the island. The forest is behind the road. The woman is across the water.&rdquo;<br>
+            <span style="color:#666; font-size:15px;"><em>patriam</em> and <em>viam</em> are direct objects of <em>amat</em>. <em>insulam</em> follows <em>ad</em>; <em>viam</em> follows <em>post</em>; <em>aquam</em> follows <em>trans</em> &mdash; all accusative. <em>Nauta, puella, via, silva,</em> and <em>femina</em> stay nominative because they are the subjects.</span>
+        </div>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; SELF-CHECK</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 4px 0;">If these feel easy, you're ready for the quiz. If not, replay the lesson or the Ludus first.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9989; ARE YOU READY?</div>
+            <div class="widget-question">Answer each one, then read the feedback.</div>
+            <div class="widget-row" data-correct="b" data-hint="-am is the direct-object/object-of-preposition ending.">
+                <div class="widget-row-prompt">The form <em>terram</em> is&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; -am is the ACCUSATIVE ending, not the subject form.">nominative, subject</button>
+                    <button data-choice="b" data-fb="Right &mdash; -am = accusative: direct object or object of a preposition (land).">accusative, object</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="a" data-hint="Who does the loving, and who is loved?">
+                <div class="widget-row-prompt"><em>Puella nautam amat.</em> means&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Right &mdash; 'puella' (-a) is the subject; 'nautam' (-am) is the direct object: the girl loves the sailor.">The girl loves the sailor</button>
+                    <button data-choice="b" data-fb="Careful &mdash; that would need 'nauta puellam amat.' Here 'puella' is the subject (-a) and 'nautam' is the object (-am).">The sailor loves the girl</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="c" data-hint="ad always takes the accusative.">
+                <div class="widget-row-prompt">Which is a correct accusative-only prepositional phrase?</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="'per via' pairs per with a nominative &mdash; per needs 'viam.'">per via</button>
+                    <button data-choice="b" data-fb="'trans nauta' pairs trans with a nominative &mdash; trans needs 'nautam.'">trans nauta</button>
+                    <button data-choice="c" data-fb="Right &mdash; 'ad insulam' correctly pairs ad with the accusative -am ending.">ad insulam</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="b" data-hint="Which one ends in the accusative -am?">
+                <div class="widget-row-prompt">Which is the <strong>direct object</strong> in <em>Femina viam amat</em>?</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="'femina' ends in -a &mdash; that's the subject, not the object.">femina</button>
+                    <button data-choice="b" data-fb="Right &mdash; 'viam' ends in -am: the direct object (the road).">viam</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- LUDUS -->
+    <div style="background: #FFFFFF; border-top: 3px solid #2196D0; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 12px;">&#127918; PLAY THE LUDUS</div>
+        <div style="font-size: 18px; color: #0e1c42; margin-bottom: 6px;"><strong>Ludus IV &middot; <em>Acc&#363;s&#257;tivus</em></strong></div>
+        <p style="font-size: 16px; color: #1a2340; line-height: 1.6; margin: 0;">A quick timed game: sort nominative vs. accusative, and pick the correct direct-object or object-of-preposition form. Play as many times as you like &mdash; your <strong>best</strong> score counts. It's the fastest way to make this automatic before the quiz.</p>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom:12px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 15px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">&#10003;</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Module 4 Quiz</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A short auto-graded quiz on the accusative ending, direct objects, the five prepositions, and this module's vocabulary.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">5</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Module 5 &mdash; Number</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Next you'll learn how Latin shows "more than one" &mdash; plural subjects and plural direct objects, built on everything you just learned.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; ONE IDEA TO CARRY OUT</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">You can now show <strong>subject vs. direct object</strong> with a single letter, and you know the five words that always demand it. That's the whole accusative singular system for reading. On to the quiz!</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; M/J LATIN, BEGINNING &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 4.05 &middot; Putting It Together</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.flip-card').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var flip = e.target.closest('.ow-flip .flip-card');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === row.dataset.correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

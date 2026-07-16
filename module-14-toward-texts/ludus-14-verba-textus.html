@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ludus XIV &mdash; Verba Text&#363;s | M/J Latin, Beginning</title>
+<style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0E1C42; color: #fff; }
+    .wrap { max-width: 640px; margin: 0 auto; min-height: 100vh; display: flex; flex-direction: column; }
+    .top { background: #0E1C42; border-bottom: 4px solid #55C8E8; padding: 16px 24px; text-align: center; }
+    .top .game { font-size: 13px; letter-spacing: 2px; color: #55C8E8; text-transform: uppercase; }
+    .top .name { font-size: 26px; margin-top: 2px; }
+    .top .sub { font-size: 13px; color: rgba(255,255,255,0.6); }
+    .stage { flex: 1; padding: 22px 24px; display: flex; flex-direction: column; }
+    .bar-wrap { background: rgba(255,255,255,0.15); border-radius: 20px; height: 12px; overflow: hidden; margin-bottom: 6px; }
+    #bar { background: #55C8E8; height: 100%; width: 100%; transition: width 0.25s linear; }
+    .meta { display: flex; justify-content: space-between; font-size: 14px; color: rgba(255,255,255,0.8); margin-bottom: 18px; }
+    .meta strong { color: #C7922C; }
+    .card { background: #fff; color: #0E1C42; border-radius: 12px; padding: 30px 24px; text-align: center; box-shadow: 0 4px 14px rgba(0,0,0,0.25); }
+    .prompt-label { font-size: 13px; color: #6b7a99; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+    .prompt { font-size: 30px; margin-bottom: 6px; }
+    .prompt-note { font-size: 15px; color: #6b7a99; min-height: 20px; }
+    .opts { display: flex; gap: 12px; margin-top: 22px; }
+    .opts button { flex: 1; padding: 16px 10px; font-size: 15px; line-height: 1.3; font-family: inherit; border: 2px solid #D0D9E8; background: #F4F6FA; color: #0E1C42; border-radius: 10px; cursor: pointer; transition: all 0.1s; }
+    .opts button:hover { border-color: #55C8E8; }
+    .opts button.right { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .opts button.wrong { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .btn { display: inline-block; padding: 15px 40px; font-size: 19px; font-family: inherit; background: #C7922C; color: #fff; border: none; border-radius: 10px; cursor: pointer; margin-top: 18px; }
+    .btn:hover { background: #b3831f; }
+    .center { text-align: center; margin: auto 0; }
+    .big { font-size: 60px; color: #55C8E8; margin: 6px 0; }
+    .lead { font-size: 18px; line-height: 1.6; color: rgba(255,255,255,0.9); }
+    .best { font-size: 15px; color: #C7922C; margin-top: 10px; }
+    .rules { text-align: left; background: rgba(255,255,255,0.08); border-radius: 10px; padding: 14px 18px; font-size: 15px; line-height: 1.6; color: rgba(255,255,255,0.9); margin: 14px 0; }
+    .hidden { display: none; }
+    .foot { text-align: center; font-size: 12px; color: rgba(255,255,255,0.4); padding: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+    <div class="top">
+        <div class="game">Ludus XIV</div>
+        <div class="name">Verba Text&#363;s</div>
+        <div class="sub">M/J Latin, Beginning &middot; Module 14</div>
+    </div>
+    <div class="stage">
+
+        <!-- START -->
+        <div id="start" class="center">
+            <div class="lead">How fast can you match this week's Latin words &mdash; <strong>Caesar, senatus, gloria, victoria, imperator</strong>, and more &mdash; to what they mean?</div>
+            <div class="rules">
+                &#9201;&#65039; You have <strong>75 seconds</strong>.<br>
+                &#9989; Tap the right match &mdash; correct matches add to your score.<br>
+                &#128260; Play as many times as you like: <strong>your best score counts.</strong>
+            </div>
+            <div class="best" id="best-start"></div>
+            <button class="btn" id="go">Incipe! (Begin)</button>
+        </div>
+
+        <!-- PLAY -->
+        <div id="play" class="hidden">
+            <div class="bar-wrap"><div id="bar"></div></div>
+            <div class="meta"><span id="time">0:75</span><span>Score: <strong id="score">0</strong></span></div>
+            <div class="card">
+                <div class="prompt-label" id="p-label">Which meaning matches?</div>
+                <div class="prompt" id="p-text">&mdash;</div>
+                <div class="prompt-note" id="p-note"></div>
+                <div class="opts"><button id="opt0"></button><button id="opt1"></button></div>
+            </div>
+        </div>
+
+        <!-- END -->
+        <div id="end" class="hidden center">
+            <div class="lead">Tempus! (Time's up)</div>
+            <div class="big" id="final">0</div>
+            <div class="lead">correct matches</div>
+            <div class="best" id="best-end"></div>
+            <button class="btn" id="again">Iterum! (Play again)</button>
+            <div class="rules" style="margin-top:18px;">&#128221; When you're happy with your best score, record it where your course tells you (this game is graded on your <strong>best of unlimited attempts</strong>).</div>
+        </div>
+
+    </div>
+    <div class="foot">&copy; Optima Academy Online &middot; Ludus &middot; Verba Text&#363;s (Module 14)</div>
+</div>
+
+<script>
+(function () {
+  var ITEMS = [
+    { label: "Latin → English: what does this mean?", q: "Caesar", note: "a name from this week's passage", opts: ["A Roman senator famous for his speeches", "A Roman general who wrote about conquering Gaul"], a: "A Roman general who wrote about conquering Gaul" },
+    { label: "English → Latin: which word matches?", q: "the Roman senate, council of elders", note: "", opts: ["senatus", "forum"], a: "senatus" },
+    { label: "Latin → English: what does this mean?", q: "gloria", note: "", opts: ["Fame and honor earned through great deeds", "A military victory in battle"], a: "Fame and honor earned through great deeds" },
+    { label: "English → Latin: which word matches?", q: "victory", note: "", opts: ["gloria", "victoria"], a: "victoria" },
+    { label: "Latin → English: what does this mean?", q: "imperator", note: "", opts: ["A military commander; later, Rome's ruler", "A member of the Roman senate"], a: "A military commander; later, Rome's ruler" },
+    { label: "English → Latin: which word matches?", q: "land, earth", note: "", opts: ["patria", "terra"], a: "terra" },
+    { label: "Latin → English: what does this mean?", q: "magnus", note: "", opts: ["Great, large", "Famous, distinguished"], a: "Great, large" },
+    { label: "English → Latin: which word matches?", q: "one's homeland, fatherland", note: "", opts: ["patria", "terra"], a: "patria" },
+    { label: "Latin → English: what does this mean?", q: "forum", note: "", opts: ["The council of Roman elders", "The public square, center of Roman civic life"], a: "The public square, center of Roman civic life" },
+    { label: "English → Latin: which word matches?", q: "a public speaker, an orator", note: "", opts: ["imperator", "orator"], a: "orator" },
+    { label: "Latin → English: what does this mean?", q: "periculum", note: "", opts: ["Danger, risk", "A test or trial by experience"], a: "Danger, risk" },
+    { label: "English → Latin: which word matches?", q: "famous, distinguished; bright, clear", note: "", opts: ["clarus", "magnus"], a: "clarus" }
+  ];
+  var DURATION = 75;
+  var order = [], oi = 0, score = 0, endAt = 0, tick = null, locked = false;
+
+  var el = function (id) { return document.getElementById(id); };
+  var startScreen = el('start'), playScreen = el('play'), endScreen = el('end');
+
+  function bestKey() { return 'ludus14_verba_textus_best'; }
+  function getBest() { try { return parseInt(localStorage.getItem(bestKey()) || '0', 10); } catch (e) { return 0; } }
+  function setBest(v) { try { localStorage.setItem(bestKey(), String(v)); } catch (e) {} }
+  function showBest() {
+    var b = getBest();
+    var t = b > 0 ? ('Your best so far: ' + b) : '';
+    el('best-start').textContent = t;
+  }
+
+  function shuffle(n) {
+    var arr = [];
+    for (var i = 0; i < n; i++) arr.push(i);
+    for (var j = arr.length - 1; j > 0; j--) {
+      var k = Math.floor(Math.random() * (j + 1));
+      var tmp = arr[j]; arr[j] = arr[k]; arr[k] = tmp;
+    }
+    return arr;
+  }
+
+  function render() {
+    if (oi >= order.length) { order = shuffle(ITEMS.length); oi = 0; }
+    var it = ITEMS[order[oi]];
+    el('p-label').textContent = it.label;
+    el('p-text').innerHTML = it.q;
+    el('p-note').textContent = it.note || '';
+    var b0 = el('opt0'), b1 = el('opt1');
+    b0.className = ''; b1.className = '';
+    b0.textContent = it.opts[0]; b1.textContent = it.opts[1];
+    b0.dataset.v = it.opts[0]; b1.dataset.v = it.opts[1];
+    locked = false;
+  }
+
+  function answer(btn) {
+    if (locked) return;
+    locked = true;
+    var it = ITEMS[order[oi]];
+    var right = btn.dataset.v === it.a;
+    btn.className = right ? 'right' : 'wrong';
+    if (right) { score++; el('score').textContent = score; }
+    else {
+      var other = btn.id === 'opt0' ? el('opt1') : el('opt0');
+      other.className = 'right';
+    }
+    setTimeout(function () { oi++; render(); }, right ? 260 : 700);
+  }
+
+  function updateTimer() {
+    var remain = Math.max(0, Math.round((endAt - Date.now()) / 1000));
+    el('time').textContent = '0:' + (remain < 10 ? '0' + remain : remain);
+    el('bar').style.width = (remain / DURATION * 100) + '%';
+    if (remain <= 0) finish();
+  }
+
+  function start() {
+    score = 0; oi = 0; order = shuffle(ITEMS.length);
+    el('score').textContent = '0';
+    startScreen.classList.add('hidden'); endScreen.classList.add('hidden');
+    playScreen.classList.remove('hidden');
+    render();
+    endAt = Date.now() + DURATION * 1000;
+    updateTimer();
+    tick = setInterval(updateTimer, 250);
+  }
+
+  function finish() {
+    clearInterval(tick);
+    playScreen.classList.add('hidden');
+    el('final').textContent = score;
+    var b = getBest();
+    if (score > b) { setBest(score); el('best-end').textContent = 'New best score! 🎉'; }
+    else { el('best-end').textContent = 'Your best so far: ' + b; }
+    endScreen.classList.remove('hidden');
+  }
+
+  el('go').addEventListener('click', start);
+  el('again').addEventListener('click', start);
+  el('opt0').addEventListener('click', function () { answer(this); });
+  el('opt1').addEventListener('click', function () { answer(this); });
+  showBest();
+})();
+</script>
+</body>
+</html>

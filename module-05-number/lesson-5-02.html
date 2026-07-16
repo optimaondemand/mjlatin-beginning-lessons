@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>M/J Latin, Beginning &mdash; Lesson 5.02</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .flip-grid { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+    .flip-card { min-width: 150px; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 14px 16px; cursor: pointer; text-align: center; transition: all 0.15s; }
+    .flip-card:hover { border-color: #55C8E8; }
+    .flip-card .front { font-size: 18px; color: #0E1C42; }
+    .flip-card .hint { font-size: 12px; color: #999; margin-top: 4px; }
+    .flip-card .back { display: none; font-size: 15px; color: #1B6A94; margin-top: 8px; border-top: 1px dashed #C5DCE5; padding-top: 8px; }
+    .flip-card.flipped .back { display: block; }
+    .para { border-collapse: collapse; margin: 14px 0; }
+    .para td, .para th { border: 1px solid #C5DCE5; padding: 9px 16px; font-size: 17px; text-align: center; }
+    .para th { background: #0E1C42; color: #fff; font-weight: normal; font-size: 14px; }
+    .para .lab { background: #EEF1F8; color: #0e1c42; }
+    .para .end { color: #c7922c; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">M/J LATIN, BEGINNING</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 5</div>
+        <div style="font-size: 12px; color: #666;">Number</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 5.02</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Four Corners</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Time</div>
+        <div style="font-size: 16px; color: #0e1c42;">about 20 minutes</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 5.02</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Four Corners</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Can one ending tell you the job <em>and</em> the number at the same time?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Yesterday you made subjects plural (<em>-ae</em>). Today you learn the plural <strong>object</strong> ending and snap all four forms together into one pattern you'll use for the rest of the year.</div>
+    </div>
+
+    <!-- MEMORY WORK -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 10px;">&#127925; MEMORY WORK</div>
+        <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-bottom: 10px;">Your target is the <strong>complete four-cell paradigm</strong> for <em>puella</em> (girl). Chant it aloud &mdash; singular row first, then plural:</div>
+        <table class="para">
+            <tr><th></th><th>Singular</th><th>Plural</th></tr>
+            <tr><td class="lab">Nominative <span style="font-size:12px;">(subject)</span></td><td>puell<span class="end">a</span></td><td>puell<span class="end">ae</span></td></tr>
+            <tr><td class="lab">Accusative <span style="font-size:12px;">(object)</span></td><td>puell<span class="end">am</span></td><td>puell<span class="end">ās</span></td></tr>
+        </table>
+        <div style="font-size: 15px; color: #666; line-height: 1.55;">Say each cell as <strong>case &mdash; number &mdash; ending &mdash; form</strong>: &ldquo;nominative singular, <em>-a</em>, puella&hellip; nominative plural, <em>-ae</em>, puellae&hellip; accusative singular, <em>-am</em>, puellam&hellip; accusative plural, <em>-ās</em>, puellās.&rdquo; Then say it backwards.</div>
+    </div>
+
+    <!-- OBJECTIVES -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> make a 1st-declension object plural by changing <em>-am</em> to <em>-ās</em>.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> recite the full four-cell paradigm from memory.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> name a noun's case and number by reading its ending.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE PLURAL OBJECT</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 4px 0 8px 0;">The object ending goes from <span style="color:#c7922c;">-am</span> to <span style="color:#c7922c;">-ās</span></h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The <span style="border-bottom: 2px dotted #c7922c; cursor: help;" title="Accusative = the object form: the noun that RECEIVES the action, or follows an accusative preposition.">accusative</span> (object) singular ends in <strong>-am</strong>. To make the object plural, change it to <strong>-ās</strong>.</p>
+        <div style="display:flex; gap:14px; flex-wrap:wrap; margin:12px 0;">
+            <div style="flex:1; min-width:220px; background:#EEF1F8; border-radius:7px; padding:14px 16px;">
+                <div style="font-size:22px; color:#0e1c42;">puell<span style="color:#c7922c;">am</span></div>
+                <div style="font-size:15px; color:#666; margin-top:6px;">one girl &mdash; the object</div>
+            </div>
+            <div style="flex:1; min-width:220px; background:#E8F6FB; border-radius:7px; padding:14px 16px;">
+                <div style="font-size:22px; color:#0e1c42;">puell<span style="color:#c7922c;">ās</span></div>
+                <div style="font-size:15px; color:#666; margin-top:6px;">the girls &mdash; the object</div>
+            </div>
+        </div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">The little line over the <strong>ā</strong> in <em>-ās</em> is a <strong>macron</strong>. It means you hold the vowel a beat longer &mdash; and it helps you tell this ending apart from others. Always write it.</p>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE WHOLE PATTERN</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 6px 0;">Here are all four forms in one grid. Two questions &mdash; <strong>what job?</strong> (the row) and <strong>how many?</strong> (the column) &mdash; are answered by a single ending:</p>
+        <table class="para">
+            <tr><th></th><th>Singular (one)</th><th>Plural (many)</th></tr>
+            <tr><td class="lab">Nominative &mdash; subject</td><td>puell<span class="end">a</span></td><td>puell<span class="end">ae</span></td></tr>
+            <tr><td class="lab">Accusative &mdash; object</td><td>puell<span class="end">am</span></td><td>puell<span class="end">ās</span></td></tr>
+        </table>
+        <div style="background:#E8F6FB; border-left:5px solid #2196D0; border-radius:6px; padding:12px 16px; font-size:16px; color:#1a2340; line-height:1.6;">&#128161; <strong>This is a paradigm</strong> &mdash; a pattern. Learn it once for <em>puella</em>, and it works for <em>every</em> 1st-declension noun you know: <em>porta, via, insula, fossa, copia&hellip;</em></div>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; NAME THAT FORM</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#128173; QUICK CHECK-IN &middot; NO WRONG ANSWER</div>
+            <div class="widget-question">Try the chant out loud right now, without looking at the table. How did it go?</div>
+            <div class="widget-options">
+                <button data-response="That's the goal &mdash; automatic recall is what lets you read Latin fast later. Keep it warm.">Got all four!</button>
+                <button data-response="Totally normal on day one. Say it 5 more times today and it'll lock in. Backwards, too.">Missed one or two</button>
+                <button data-response="No problem &mdash; peek at the table, chant it three times, then try again. Repetition is the whole trick.">I need another look</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 12px 0 4px 0;">Now read each ending and give its full label &mdash; <strong>job</strong> and <strong>number</strong>:</p>
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9989; CHECK YOUR UNDERSTANDING</div>
+            <div class="widget-question">Which label fits each form?</div>
+            <div class="widget-row" data-correct="b" data-hint="-ae = subject, more than one.">
+                <div class="widget-row-prompt">puellae</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Close &mdash; but -ae is the SUBJECT plural, not object.">object, many</button>
+                    <button data-choice="b" data-fb="Right &mdash; -ae = nominative plural: subject, more than one.">subject, many</button>
+                    <button data-choice="c" data-fb="Look at the ending &mdash; -ae is plural, not singular.">subject, one</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="c" data-hint="-am = object, singular.">
+                <div class="widget-row-prompt">puellam</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; -am is the OBJECT ending, and it's singular.">subject, one</button>
+                    <button data-choice="b" data-fb="Careful &mdash; -am is singular; -ās would be the object plural.">object, many</button>
+                    <button data-choice="c" data-fb="Right &mdash; -am = accusative singular: object, one.">object, one</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="a" data-hint="-ās (with the macron) = object, more than one.">
+                <div class="widget-row-prompt">puell&#257;s</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Right &mdash; -ās = accusative plural: object, more than one.">object, many</button>
+                    <button data-choice="b" data-fb="Look again &mdash; -ās is the OBJECT plural, not the subject.">subject, many</button>
+                    <button data-choice="c" data-fb="It's plural &mdash; the -ās ending means more than one.">object, one</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="b" data-hint="-a = subject, one.">
+                <div class="widget-row-prompt">puella</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; -a is the subject form, not the object.">object, one</button>
+                    <button data-choice="b" data-fb="Right &mdash; -a = nominative singular: subject, one.">subject, one</button>
+                    <button data-choice="c" data-fb="It's singular &mdash; -ae would be the plural.">subject, many</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 5.03 &mdash; Gates, Ditches, and Troops</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">New plural vocabulary and the Roman world it describes &mdash; including one word that changes its meaning when it goes plural.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; ONE IDEA TO CARRY OUT</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Four forms, one pattern: <strong>-a, -ae, -am, -ās.</strong> Each ending tells you the <em>job</em> and the <em>number</em> in one stroke. Chant it until it's automatic &mdash; it's the backbone of everything ahead.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; M/J LATIN, BEGINNING &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 5.02 &middot; The Four Corners</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.flip-card').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var flip = e.target.closest('.ow-flip .flip-card');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === row.dataset.correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

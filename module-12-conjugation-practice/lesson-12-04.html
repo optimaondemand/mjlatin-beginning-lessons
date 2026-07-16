@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>M/J Latin, Beginning &mdash; Lesson 12.04</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .flip-grid { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+    .flip-card { min-width: 150px; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 14px 16px; cursor: pointer; text-align: center; transition: all 0.15s; }
+    .flip-card:hover { border-color: #55C8E8; }
+    .flip-card .front { font-size: 18px; color: #0E1C42; }
+    .flip-card .hint { font-size: 12px; color: #999; margin-top: 4px; }
+    .flip-card .back { display: none; font-size: 15px; color: #1B6A94; margin-top: 8px; border-top: 1px dashed #C5DCE5; padding-top: 8px; }
+    .flip-card.flipped .back { display: block; }
+    .para { border-collapse: collapse; margin: 14px 0; }
+    .para td, .para th { border: 1px solid #C5DCE5; padding: 9px 16px; font-size: 17px; text-align: center; }
+    .para th { background: #0E1C42; color: #fff; font-weight: normal; font-size: 14px; }
+    .para .lab { background: #EEF1F8; color: #0e1c42; }
+    .para .end { color: #c7922c; }
+    .step { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px; }
+    .step .num { min-width: 28px; height: 28px; border-radius: 50%; background: #2196D0; color: #fff; font-size: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">M/J LATIN, BEGINNING</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 12</div>
+        <div style="font-size: 12px; color: #666;">Conjugation Practice and Parsing</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 12.04</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Reading the Paragraph</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Time</div>
+        <div style="font-size: 16px; color: #0e1c42;">about 20 minutes</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 12.04</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Reading the Paragraph</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Can you parse a whole paragraph, one sentence at a time?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Every sentence you've read so far has stood alone. Today you meet your first <strong>paragraph</strong> &mdash; six connected Latin sentences. The good news: Latin's endings keep reminding you of every grammatical relationship, sentence by sentence, so reading a paragraph is not harder than reading one sentence six times. It just asks you to keep going.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE FULL PARSING CHECKLIST</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Run this four-step check on every sentence you read from now on:</p>
+        <div class="step"><div class="num">1</div><div style="font-size:16px; color:#1a2340; line-height:1.55;">Find the <strong>subject</strong>. Parse it: case, number, declension.</div></div>
+        <div class="step"><div class="num">2</div><div style="font-size:16px; color:#1a2340; line-height:1.55;">Find the <strong>verb</strong>. Parse it: person, number, tense, conjugation (or note &ldquo;esse&rdquo;).</div></div>
+        <div class="step"><div class="num">3</div><div style="font-size:16px; color:#1a2340; line-height:1.55;">Find the <strong>direct object</strong>, if there is one. Parse it the same way as the subject.</div></div>
+        <div class="step"><div class="num">4</div><div style="font-size:16px; color:#1a2340; line-height:1.55;">Confirm <strong>agreement</strong>: does the verb's person and number match the subject's number?</div></div>
+        <div style="background:#E8F6FB; border-left:5px solid #2196D0; border-radius:6px; padding:12px 16px; font-size:16px; color:#1a2340; line-height:1.6; margin-top:12px;">&#128161; Once you can run this checklist automatically, translating stops being guesswork and becomes something closer to solving &mdash; every clue is right there in the endings.</div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE PARAGRAPH</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Read it through once for the general idea &mdash; every word here is one you already know:</p>
+        <div style="background:#EEF1F8; border-radius:7px; padding:16px 18px; font-size:19px; color:#0e1c42; line-height:1.7; margin-bottom:10px;">
+            R&#333;m&#257;n&#299; magn&#299; sunt. R&#333;m&#257;n&#299; Italiam habitant. Agricolae terram amant et laborant. Nautae tr&#257;ns aquam navigant et terram laudant. Serv&#299; d&#333;na portant. Puellae et serv&#299; aquam amant.
+        </div>
+        <div style="background:#FFFFFF; border:1px solid #D0D9E8; border-left:3px solid #2A9D5C; border-radius:4px; padding:12px 16px; font-size:16px; color:#1a2340; line-height:1.6; margin-bottom:16px;">
+            <strong>Read it out:</strong> &ldquo;The Romans are great. The Romans inhabit Italy. The farmers love the land and work (it). The sailors sail across the water and praise the land. The slaves carry the gifts. The girls and the slaves love the water.&rdquo;
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 6px 0;"><strong>Two sentences, worked out completely:</strong></p>
+        <table class="para">
+            <tr><th>Sentence 1</th><th>Parsing</th></tr>
+            <tr><td class="lab">R&#333;m&#257;n&#299;</td><td>nom. pl., 2nd decl., subject</td></tr>
+            <tr><td class="lab">magn&#299;</td><td>nom. pl., 2nd decl. adjective, predicate nominative</td></tr>
+            <tr><td class="lab">sunt</td><td>3rd pl., present, <em>esse</em> &mdash; links subject to predicate nominative</td></tr>
+        </table>
+        <table class="para">
+            <tr><th>Sentence 3</th><th>Parsing</th></tr>
+            <tr><td class="lab">Agricolae</td><td>nom. pl., 1st decl., subject</td></tr>
+            <tr><td class="lab">terram</td><td>acc. sg., 1st decl., direct object (shared by both verbs)</td></tr>
+            <tr><td class="lab">amant&hellip;laborant</td><td>both 3rd pl., present, 1st conj. &mdash; one subject, two verbs joined by <em>et</em></td></tr>
+        </table>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; PARSE THE REST OF THE PARAGRAPH</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 4px 0;">Now try the remaining sentences yourself.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9989; CHECK YOUR UNDERSTANDING</div>
+            <div class="widget-question">Answer each one, then read the feedback.</div>
+            <div class="widget-row" data-correct="b" data-hint="Sunt is 3rd plural, present, esse.">
+                <div class="widget-row-prompt">In <em>R&#333;m&#257;n&#299; magn&#299; sunt</em>, what is <em>sunt</em>?</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; sunt has no direct object here; it links subject to predicate nominative.">3rd pl., present, transitive verb with a direct object</button>
+                    <button data-choice="b" data-fb="Right &mdash; sunt is 3rd plural present of esse, linking Romani to magni.">3rd pl., present, esse</button>
+                    <button data-choice="c" data-fb="Not quite &mdash; sunt is plural, matching the plural subject Romani.">3rd sg., present, esse</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="a" data-hint="One subject, agricolae, does both actions.">
+                <div class="widget-row-prompt">In <em>Agricolae terram amant et laborant</em>, what does <em>et</em> join?</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Right &mdash; one subject (agricolae) performs two verbs, amant and laborant, joined by et.">two verbs sharing one subject</button>
+                    <button data-choice="b" data-fb="Not quite &mdash; there is only one subject, agricolae, in this sentence.">two separate subjects</button>
+                    <button data-choice="c" data-fb="Not quite &mdash; terram is the only direct object; there's no second one to join.">two direct objects</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="c" data-hint="Terram ends in -am: 1st declension accusative singular.">
+                <div class="widget-row-prompt">In <em>Nautae tr&#257;ns aquam navigant et terram laudant</em>, what is <em>terram</em>?</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; -am is accusative, not nominative.">nom. sg., subject of laudant</button>
+                    <button data-choice="b" data-fb="Not quite &mdash; terram is singular, not plural.">acc. pl., direct object</button>
+                    <button data-choice="c" data-fb="Right &mdash; terram is accusative singular: the direct object of laudant.">acc. sg., direct object of laudant</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="b" data-hint="Puellae and servi are two separate nominative plural nouns joined by et.">
+                <div class="widget-row-prompt">In <em>Puellae et serv&#299; aquam amant</em>, why is <em>amant</em> plural?</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; aquam is accusative, the direct object; it doesn't set the verb's number.">because aquam is plural</button>
+                    <button data-choice="b" data-fb="Right &mdash; two nominative subjects (puellae, servi) joined by et form a plural compound subject.">because two subjects are joined by et</button>
+                    <button data-choice="c" data-fb="Not quite &mdash; puellae alone is plural, but the reason is the compound subject formed with servi.">just because puellae is plural</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">5</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 12.05 &mdash; Ready for the Quiz?</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">You'll review the whole module, read one more short passage, play the Ludus, and take a self-check before the Module 12 Quiz.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; ONE IDEA TO CARRY OUT</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">A paragraph is just several sentences, and each one still carries its own grammar in its endings. Run the four-step checklist on each sentence, and the paragraph takes care of itself.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; M/J LATIN, BEGINNING &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 12.04 &middot; Reading the Paragraph</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.flip-card').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var flip = e.target.closest('.ow-flip .flip-card');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === row.dataset.correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

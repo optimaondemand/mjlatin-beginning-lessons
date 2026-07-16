@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>M/J Latin, Beginning &mdash; Lesson 9.05</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .flip-grid { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+    .flip-card { min-width: 150px; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 14px 16px; cursor: pointer; text-align: center; transition: all 0.15s; }
+    .flip-card:hover { border-color: #55C8E8; }
+    .flip-card .front { font-size: 18px; color: #0E1C42; }
+    .flip-card .hint { font-size: 12px; color: #999; margin-top: 4px; }
+    .flip-card .back { display: none; font-size: 15px; color: #1B6A94; margin-top: 8px; border-top: 1px dashed #C5DCE5; padding-top: 8px; }
+    .flip-card.flipped .back { display: block; }
+    .para { border-collapse: collapse; margin: 14px 0; }
+    .para td, .para th { border: 1px solid #C5DCE5; padding: 9px 16px; font-size: 17px; text-align: center; }
+    .para th { background: #0E1C42; color: #fff; font-weight: normal; font-size: 14px; }
+    .para .lab { background: #EEF1F8; color: #0e1c42; }
+    .para .end { color: #c7922c; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">M/J LATIN, BEGINNING</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 9</div>
+        <div style="font-size: 12px; color: #c7922c; font-weight: bold;">GATE MODULE</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 9.05</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Ready for the Gate</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Time</div>
+        <div style="font-size: 16px; color: #0e1c42;">about 20 minutes</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 9.05</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Ready for the Gate</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Are you ready for the Module 9 gate-check quiz?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">No new grammar today &mdash; just pulling the whole week together: the three-column paradigm table, the neuter rule, and a mixed-declension passage read the Roman way. Then play the Ludus and take a self-check before the quiz.</div>
+    </div>
+
+    <!-- PART 1: WEEK ON ONE PAGE -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE WEEK ON ONE PAGE</div>
+        <div style="font-size:16px; color:#0e1c42; margin-bottom:4px;"><strong>The paradigm</strong> &mdash; one system, three columns:</div>
+        <table class="para">
+            <tr><th></th><th>1st Decl. Fem.</th><th>2nd Decl. Masc.</th><th>2nd Decl. Neut.</th></tr>
+            <tr><td class="lab">Nom. Sg.</td><td>-<span class="end">a</span></td><td>-<span class="end">us</span></td><td>-<span class="end">um</span></td></tr>
+            <tr><td class="lab">Acc. Sg.</td><td>-<span class="end">am</span></td><td>-<span class="end">um</span></td><td>-<span class="end">um</span></td></tr>
+            <tr><td class="lab">Nom. Pl.</td><td>-<span class="end">ae</span></td><td>-<span class="end">ī</span></td><td>-<span class="end">a</span></td></tr>
+            <tr><td class="lab">Acc. Pl.</td><td>-<span class="end">ās</span></td><td>-<span class="end">ōs</span></td><td>-<span class="end">a</span></td></tr>
+        </table>
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;">
+            <div style="flex:1; min-width:240px; background:#EEF1F8; border-radius:7px; padding:12px 16px; font-size:16px; color:#1a2340;"><strong>Neuter rule:</strong> nominative and accusative are always identical for a 2nd decl. neuter noun.</div>
+            <div style="flex:1; min-width:240px; background:#EEF1F8; border-radius:7px; padding:12px 16px; font-size:16px; color:#1a2340;"><strong>Agreement:</strong> one subject &rarr; <em>est</em> &middot; many &rarr; <em>sunt</em>.</div>
+        </div>
+        <div style="background:#E8F6FB; border-left:5px solid #2196D0; border-radius:6px; padding:12px 16px; font-size:16px; color:#1a2340; line-height:1.6; margin-top:10px;">&#128161; <strong>When in doubt, check the dictionary entry.</strong> Genitive singular <em>-ae</em> means 1st declension; genitive singular <em>-ī</em> means 2nd declension. The entry's gender label (f., m., n.) resolves every overlap.</div>
+    </div>
+
+    <!-- PART 2: READER'S PASSAGE -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; READ IT THE ROMAN WAY</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Run the full parsing checklist on this short passage. It uses all three declensions &mdash; find every noun's declension, case, number, and function:</p>
+        <div style="background:#EEF1F8; border-radius:7px; padding:16px 18px; font-size:19px; color:#0e1c42; line-height:1.7; margin-bottom:10px;">
+            Gallia magna terra est. Populus Romanus Galliam amat. Oppida et templa multa sunt. Senatus bellum non amat. <span style="color:#999; font-size:15px;">(magna, Romanus, multa = adjectives &ldquo;large,&rdquo; &ldquo;Roman,&rdquo; &ldquo;many,&rdquo; given)</span>
+        </div>
+        <div style="background:#FFFFFF; border:1px solid #D0D9E8; border-left:3px solid #2A9D5C; border-radius:4px; padding:12px 16px; font-size:16px; color:#1a2340; line-height:1.6;">
+            <strong>Read it out:</strong> &ldquo;Gaul is a great land. The Roman people love Gaul. There are many fortified towns and temples. The Senate does not love war.&rdquo;<br>
+            <span style="color:#666; font-size:15px;">Notice: <em>Gallia</em> and <em>terra</em> are both nom. sg., 1st fem. (subject and predicate nominative). <em>Galliam</em> is acc. sg., 1st fem. (direct object). <em>Oppida et templa</em> is a plural neuter subject (<em>-a</em>, neuter rule) &mdash; so the verb is <em>sunt</em>. <em>Bellum</em> is acc. sg., 2nd neut. &mdash; by the neuter rule alone you can't tell subject from object, but the sentence tells you it's what the Senate does not love.</span>
+        </div>
+    </div>
+
+    <!-- PART 3: SELF-CHECK -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; SELF-CHECK</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 4px 0;">If these feel easy, you're ready for the gate-check quiz. If not, replay a lesson or the Ludus first &mdash; there is no penalty for taking more time here.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9989; ARE YOU READY?</div>
+            <div class="widget-question">Answer each one, then read the feedback.</div>
+            <div class="widget-row" data-correct="b" data-hint="regnum, regnī n. — this ends in -a, plural.">
+                <div class="widget-row-prompt">The form <em>regna</em> is&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; -a on a neuter noun signals plural, not singular.">Nom./acc. singular, 2nd neut.</button>
+                    <button data-choice="b" data-fb="Right &mdash; -a is the 2nd declension neuter nom./acc. plural: kingdoms.">Nom./acc. plural, 2nd neut.</button>
+                    <button data-choice="c" data-fb="Not quite &mdash; regnum, regnī is neuter (n.), which rules out 1st declension.">Nominative plural, 1st fem.</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="a" data-hint="'templa' ends in -a, neuter plural — plural subject needs sunt.">
+                <div class="widget-row-prompt">Templa magna ___ . <span style="color:#999;">(magna = large, given)</span></div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Right &mdash; 'templa' is plural (neuter rule, -a), so 'sunt.'">sunt</button>
+                    <button data-choice="b" data-fb="'templa' is plural, so it needs 'sunt,' not 'est.'">est</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="c" data-hint="Two plural subjects joined by 'et,' plus 'sunt.'">
+                <div class="widget-row-prompt"><em>Oppida et templa sunt.</em> means&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; there's no direct object here; 'sunt' is the verb 'to be,' not a transitive action.">The fortified towns love the temples</button>
+                    <button data-choice="b" data-fb="Careful &mdash; both subjects are plural (neuter -a) so the verb must be 'sunt,' not 'est.'">The fortified town and temple is here</button>
+                    <button data-choice="c" data-fb="Right &mdash; plural subjects + 'sunt' = 'The fortified towns and temples are (here).'">The fortified towns and temples are here</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="b" data-hint="Check the dictionary entry's gender to resolve the overlap.">
+                <div class="widget-row-prompt">Which is correct for <em>dominum</em>? <span style="color:#999;">(dominus, dominī m.)</span></div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; the entry (dominī, m.) is masculine, so this cannot be a neuter form.">Nom./acc. singular, 2nd neut.</button>
+                    <button data-choice="b" data-fb="Right &mdash; masculine gender + -um = accusative singular, 2nd declension masculine.">Accusative singular, 2nd masc.</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- LUDUS -->
+    <div style="background: #FFFFFF; border-top: 3px solid #2196D0; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 12px;">&#127918; PLAY THE LUDUS</div>
+        <div style="font-size: 18px; color: #0e1c42; margin-bottom: 6px;"><strong>Ludus IX &middot; <em>Recognitiō II</em></strong></div>
+        <p style="font-size: 16px; color: #1a2340; line-height: 1.6; margin: 0;">This week's game is bigger: <strong>20 mixed forms</strong> from all three declensions, <strong>120 seconds</strong> on the clock. For each form, pick the parse that's actually correct &mdash; the wrong answer is always a close, plausible mix-up, so read carefully. Play as many times as you like &mdash; your <strong>best score counts</strong>. It's the fastest way to make mixed-declension parsing automatic before the quiz.</p>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT: THE GATE -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom:14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 15px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">&#10003;</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Module 9 Quiz &mdash; the gate check</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">This quiz is <strong>40 points</strong>, and it's a <strong>gate</strong>: you need <strong>32/40 (80%)</strong> to move on to Module 10 and the verb modules that follow. Here's the important part &mdash; <strong>retakes are unlimited, and they're supportive, not punitive.</strong> If you don't clear 80% the first time, you can review, replay the Ludus, and try again as many times as you need. The gate exists to make sure you're genuinely ready for verbs, not to catch you out.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">10</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Module 10 &mdash; your first Latin verb conjugation</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Once you've cleared the gate, you'll start building full present-tense verb forms &mdash; everything you know about nouns is about to meet the words that act on them.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SELF-ASSESSMENT CHECK-IN -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128173; HOW DO YOU FEEL?</div>
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#128173; QUICK CHECK-IN &middot; NO WRONG ANSWER</div>
+            <div class="widget-question">Be honest with yourself: how do you feel heading into the gate-check quiz?</div>
+            <div class="widget-options">
+                <button data-response="That confidence is well earned if the chant and the Ludus both feel automatic. Go take the quiz.">Ready to go</button>
+                <button data-response="That's useful, specific self-knowledge &mdash; go back to that one lesson or run the Ludus a few more times on exactly that weak spot, then try the quiz.">Mostly ready, one thing feels shaky</button>
+                <button data-response="That's completely fine. Replay the Memory Work chant in Lesson 9.02 and the Ludus a few times before you take the quiz &mdash; and remember, retakes are unlimited and supportive either way.">Not sure yet</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; ONE IDEA TO CARRY OUT</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">You can now hold three noun paradigms in your head at once and switch between them without hesitation. That's genuine fluency in the noun system &mdash; and it's exactly what the gate is checking for. On to the quiz!</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; M/J LATIN, BEGINNING &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 9.05 &middot; Ready for the Gate</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.flip-card').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var flip = e.target.closest('.ow-flip .flip-card');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === row.dataset.correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

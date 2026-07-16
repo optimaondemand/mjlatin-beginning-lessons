@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>M/J Latin, Beginning &mdash; Lesson 0.03</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .flip-grid { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+    .flip-card { min-width: 150px; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 14px 16px; cursor: pointer; text-align: center; transition: all 0.15s; }
+    .flip-card:hover { border-color: #55C8E8; }
+    .flip-card .front { font-size: 18px; color: #0E1C42; }
+    .flip-card .hint { font-size: 12px; color: #999; margin-top: 4px; }
+    .flip-card .back { display: none; font-size: 15px; color: #1B6A94; margin-top: 8px; border-top: 1px dashed #C5DCE5; padding-top: 8px; }
+    .flip-card.flipped .back { display: block; }
+    .para { border-collapse: collapse; margin: 14px 0; }
+    .para td, .para th { border: 1px solid #C5DCE5; padding: 9px 16px; font-size: 17px; text-align: center; }
+    .para th { background: #0E1C42; color: #fff; font-weight: normal; font-size: 14px; }
+    .para .lab { background: #EEF1F8; color: #0e1c42; }
+    .para .end { color: #c7922c; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">M/J LATIN, BEGINNING</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 0</div>
+        <div style="font-size: 12px; color: #666;">Welcome</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 0.03</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Latin in English</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Time</div>
+        <div style="font-size: 16px; color: #0e1c42;">about 20 minutes</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 0.03</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Latin in English &mdash; You Already Know More Than You Think</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">How much of the English you speak every day is secretly Latin?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">English isn't a Romance language &mdash; it comes from the Germanic dialects the Anglo-Saxons brought to Britain. But English still absorbed an enormous amount of Latin vocabulary. Today you'll see how, and start collecting the Latin roots hiding inside words you already use.</div>
+    </div>
+
+    <!-- OBJECTIVES -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe two ways Latin vocabulary entered English historically.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> estimate how much of English vocabulary has Latin roots.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> trace at least four English words back to their Latin root.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; TWO ROADS INTO ENGLISH</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Latin vocabulary reached English through two main historical channels.</p>
+
+        <div style="display:flex; gap:14px; flex-wrap:wrap; margin:14px 0;">
+            <div style="flex:1; min-width:220px; background:#EEF1F8; border-radius:7px; padding:14px 16px;">
+                <div style="font-size:18px; color:#0e1c42;">Road 1 &mdash; 1066 AD</div>
+                <div style="font-size:15px; color:#666; margin-top:6px;">The Normans conquered England and brought Old French &mdash; itself a Romance language &mdash; which carried thousands of Latin-derived words into English.</div>
+            </div>
+            <div style="flex:1; min-width:220px; background:#E8F6FB; border-radius:7px; padding:14px 16px;">
+                <div style="font-size:18px; color:#0e1c42;">Road 2 &mdash; the Renaissance</div>
+                <div style="font-size:15px; color:#666; margin-top:6px;">Scholars deliberately imported Latin terms directly into English to name new scientific, legal, and philosophical ideas.</div>
+            </div>
+        </div>
+
+        <div style="background:#E8F6FB; border-left:5px solid #2196D0; border-radius:6px; padding:12px 16px; font-size:16px; color:#1a2340; line-height:1.6;">&#128161; As a result, roughly <strong>60 percent</strong> of English vocabulary has Latin or Latin-via-French roots: <em>animal</em> (from <em>animal</em>, &ldquo;living thing&rdquo;), <em>education</em> (from <em>educatio</em>, &ldquo;a leading out&rdquo;), <em>science</em> (from <em>scientia</em>, &ldquo;knowledge&rdquo;), <em>justice</em> (from <em>justitia</em>, &ldquo;righteousness&rdquo;), <em>library</em> (from <em>libraria</em>, &ldquo;bookshop&rdquo;). These aren't distant coincidences &mdash; they're direct inheritances. You already know more Latin than you think.</div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; VOCABULARY &middot; ROOTS YOU ALREADY KNOW</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 4px 0;">Click each card to see the Latin root's meaning and the English words it built.</p>
+
+        <div class="optima-widget ow-flip">
+            <div class="widget-kicker">&#128214; VOCABULARY &middot; CLICK TO FLIP</div>
+            <div class="widget-question">Eight Latin roots, hiding in words you already use.</div>
+            <div class="flip-grid">
+                <div class="flip-card"><div class="front">aqua</div><div class="hint">click to flip</div><div class="back">water &mdash; aquarium, aquatic, aqueduct, aquifer</div></div>
+                <div class="flip-card"><div class="front">liber</div><div class="hint">click to flip</div><div class="back">book (also: free) &mdash; library, liberal, liberation, liberate</div></div>
+                <div class="flip-card"><div class="front">terra</div><div class="hint">click to flip</div><div class="back">land, earth &mdash; terrain, territory, terrestrial, Mediterranean</div></div>
+                <div class="flip-card"><div class="front">via</div><div class="hint">click to flip</div><div class="back">road, way &mdash; via, viaduct, deviate, obvious, trivial</div></div>
+                <div class="flip-card"><div class="front">magnus</div><div class="hint">click to flip</div><div class="back">great, large &mdash; magnificent, magnify, magnitude, magnum</div></div>
+                <div class="flip-card"><div class="front">novus</div><div class="hint">click to flip</div><div class="back">new &mdash; novel, novelty, innovation, renovate</div></div>
+                <div class="flip-card"><div class="front">tempus</div><div class="hint">click to flip</div><div class="back">time &mdash; temporary, contemporary, tempo, tense (grammatical)</div></div>
+                <div class="flip-card"><div class="front">rex / regis</div><div class="hint">click to flip</div><div class="back">king &mdash; regal, royal, reign, regulate, regime</div></div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; DERIVATIVE MINUTE</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;"><strong>terra &rarr; Mediterranean.</strong> <em>Terra</em> means &ldquo;earth&rdquo; or &ldquo;land.&rdquo; <em>Mediterranean</em> comes from <em>medius</em> (&ldquo;middle&rdquo;) + <em>terra</em> (&ldquo;land&rdquo;) &mdash; &ldquo;the sea in the middle of the land.&rdquo; Surrounded by that sea on three sides, the Romans thought of it as the center of the world &mdash; which, for them, it was.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;"><strong>via &rarr; obvious, trivial.</strong> <em>Via</em> means &ldquo;road&rdquo; or &ldquo;way.&rdquo; <em>Obvious</em> comes from <em>ob</em> (&ldquo;in the way of&rdquo;) + <em>via</em> &mdash; literally &ldquo;in the road,&rdquo; something standing right in front of you. <em>Trivial</em> comes from <em>trivium</em> (&ldquo;three roads&rdquo; &mdash; a crossroads where common people gathered), and originally meant &ldquo;of the common roadside.&rdquo;</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#128173; QUICK CHECK-IN &middot; NO WRONG ANSWER</div>
+            <div class="widget-question">Before today, had you ever noticed that &ldquo;aquarium,&rdquo; &ldquo;library,&rdquo; and &ldquo;temporary&rdquo; share hidden Latin roots?</div>
+            <div class="widget-options">
+                <button data-response="That's a great instinct to already have &mdash; you'll be spotting these connections everywhere from now on.">Yes, I'd noticed patterns like that before.</button>
+                <button data-response="Most people haven't &mdash; until someone points it out, English vocabulary just looks like a pile of unrelated words. Now you have a key to unlock a lot of it.">No, this is new to me.</button>
+                <button data-response="That's exactly the right instinct for this course &mdash; keep an eye out, and log any new ones you spot in your notebook's Derivative Log.">A little, but I'd never connected the dots.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 16px 0 4px 0;">Now check your understanding of three of today's roots.</p>
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9989; CHECK YOUR UNDERSTANDING</div>
+            <div class="widget-question">Which meaning fits each Latin root?</div>
+            <div class="widget-row" data-correct="a" data-hint="Think of terrain and territory.">
+                <div class="widget-row-prompt">terra</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Right &mdash; terra means &ldquo;land, earth,&rdquo; as in terrain and territory.">land / earth</button>
+                    <button data-choice="b" data-fb="Not quite &mdash; that's via. terra means &ldquo;land, earth.&rdquo;">road / way</button>
+                    <button data-choice="c" data-fb="Not quite &mdash; that's tempus. terra means &ldquo;land, earth.&rdquo;">time</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="b" data-hint="Think of a viaduct or being &ldquo;obvious&rdquo; &mdash; right in the road.">
+                <div class="widget-row-prompt">via</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; that's tempus. via means &ldquo;road, way.&rdquo;">time</button>
+                    <button data-choice="b" data-fb="Right &mdash; via means &ldquo;road, way,&rdquo; as in viaduct and obvious.">road / way</button>
+                    <button data-choice="c" data-fb="Not quite &mdash; that's novus. via means &ldquo;road, way.&rdquo;">new</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="c" data-hint="Think of magnificent and magnitude.">
+                <div class="widget-row-prompt">magnus</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; that's rex/regis. magnus means &ldquo;great, large.&rdquo;">king</button>
+                    <button data-choice="b" data-fb="Not quite &mdash; that's novus. magnus means &ldquo;great, large.&rdquo;">new</button>
+                    <button data-choice="c" data-fb="Right &mdash; magnus means &ldquo;great, large,&rdquo; as in magnificent and magnitude.">great / large</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">4</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 0.04 &mdash; The Scholar's Notebook</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">You'll set up your Latin notebook &mdash; the tool you'll use all year to record what you're learning.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; ONE IDEA TO CARRY OUT</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">You already speak a lot of Latin without knowing it. Every time you notice a root &mdash; <em>aqua, terra, via, magnus</em> &mdash; hiding inside an English word, write it down. That habit is exactly what your notebook's Derivative Log is for.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; M/J LATIN, BEGINNING &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 0.03 &middot; Latin in English &mdash; You Already Know More Than You Think</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.flip-card').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var flip = e.target.closest('.ow-flip .flip-card');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === row.dataset.correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

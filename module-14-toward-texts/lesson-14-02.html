@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>M/J Latin, Beginning &mdash; Lesson 14.02</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    /* flip-card engine (vocabulary) */
+    .flip-grid { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+    .flip-card { min-width: 150px; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 14px 16px; cursor: pointer; text-align: center; transition: all 0.15s; }
+    .flip-card:hover { border-color: #55C8E8; }
+    .flip-card .front { font-size: 18px; color: #0E1C42; }
+    .flip-card .hint { font-size: 12px; color: #999; margin-top: 4px; }
+    .flip-card .back { display: none; font-size: 15px; color: #1B6A94; margin-top: 8px; border-top: 1px dashed #C5DCE5; padding-top: 8px; }
+    .flip-card.flipped .back { display: block; }
+    /* paradigm table */
+    .para { border-collapse: collapse; margin: 14px 0; }
+    .para td, .para th { border: 1px solid #C5DCE5; padding: 9px 16px; font-size: 17px; text-align: center; }
+    .para th { background: #0E1C42; color: #fff; font-weight: normal; font-size: 14px; }
+    .para .lab { background: #EEF1F8; color: #0e1c42; }
+    .para .end { color: #c7922c; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">M/J LATIN, BEGINNING</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 14</div>
+        <div style="font-size: 12px; color: #666;">Toward Adapted Texts</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 14.02</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Caesar in Gaul</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Time</div>
+        <div style="font-size: 16px; color: #0e1c42;">about 20 minutes</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 14.02</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Caesar in Gaul</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">How do you read a real Latin passage without knowing every word?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Today you read six real adapted sentences from Caesar's <em>Bellum Gallicum</em> &mdash; the actual document he sent home from Gaul. Every word you haven't studied is glossed for you. Your job is to use the reading toolkit you already own: nominative, accusative, and <em>esse</em>.</div>
+    </div>
+
+    <!-- MEMORY WORK -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 10px;">&#127925; MEMORY WORK &middot; THE READING TOOLKIT</div>
+        <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-bottom: 10px;">Before you open the passage, rehearse these two owned paradigms from memory &mdash; say them aloud, then write them without looking:</div>
+        <table class="para">
+            <tr><th></th><th colspan="2">1st decl. &mdash; puella</th><th colspan="2">2nd decl. masc. &mdash; servus</th></tr>
+            <tr><td class="lab"></td><td>Singular</td><td>Plural</td><td>Singular</td><td>Plural</td></tr>
+            <tr><td class="lab">Nominative</td><td>puella</td><td>puellae</td><td>servus</td><td>serv<span class="end">ī</span></td></tr>
+            <tr><td class="lab">Accusative</td><td>puellam</td><td>puell<span class="end">ās</span></td><td>servum</td><td>serv<span class="end">ōs</span></td></tr>
+        </table>
+        <div style="font-size: 15px; color: #666; line-height: 1.55; margin-bottom: 10px;">Add <em>esse</em> (sum, es, est, sumus, estis, sunt) and 1st-conjugation present (amo, amas, amat, amamus, amatis, amant). If any of these gave you pause, that is your cue to review before today's passage.</div>
+        <div style="background:#E8F6FB; border-left:5px solid #2196D0; border-radius:6px; padding:12px 16px; font-size:16px; color:#1a2340; line-height:1.6;">&#128161; <strong>One reading chunk you have not owned yet:</strong> phrases like <em>in Gallia</em> and <em>in terra</em> use a case called the <strong>ablative</strong>, which you will study fully in Semester 2. For now, treat the whole phrase &ldquo;<em>in</em> + noun&rdquo; as a single unit meaning &ldquo;in ___&rdquo; &mdash; it will always be glossed for you until then.</div>
+    </div>
+
+    <!-- OBJECTIVES -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> apply a simple strategy for reading an adapted Latin passage.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> identify the nominative subject and accusative object in each sentence of the passage.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> translate simple adapted sentences using the vocabulary gloss.</div>
+        </div>
+    </div>
+
+    <!-- MATERIALS -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your Latin notebook</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Something to write with</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; A READING STRATEGY</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Real Latin feels different from a practice sentence built just for you. Here is the strategy Roman schoolchildren's teachers still recommend today:</p>
+        <div style="display:flex; gap:12px; flex-wrap:wrap; margin:10px 0;">
+            <div style="flex:1; min-width:220px; background:#EEF1F8; border-radius:7px; padding:12px 16px;"><strong style="color:#0e1c42;">1. Read it once, all the way through.</strong><div style="font-size:15px; color:#1a2340; margin-top:4px;">Do not stop at the first unfamiliar word. Get the shape of the whole passage first.</div></div>
+            <div style="flex:1; min-width:220px; background:#EEF1F8; border-radius:7px; padding:12px 16px;"><strong style="color:#0e1c42;">2. Read it again, sentence by sentence.</strong><div style="font-size:15px; color:#1a2340; margin-top:4px;">Find the verb. Find its subject (nominative). Find its object, if any (accusative).</div></div>
+            <div style="flex:1; min-width:220px; background:#EEF1F8; border-radius:7px; padding:12px 16px;"><strong style="color:#0e1c42;">3. Use the gloss, not a guess.</strong><div style="font-size:15px; color:#1a2340; margin-top:4px;">Any word you have not studied will be given to you underneath the passage. Look it up instead of guessing from English.</div></div>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE ADAPTED PASSAGE</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">This passage is adapted from Caesar's <em>Bellum Gallicum</em> (Book I, chapters 1&ndash;2).</p>
+        <div style="background:#EEF1F8; border-radius:7px; padding:18px 20px; font-size:19px; color:#0e1c42; line-height:1.85; margin-bottom:14px;">
+            Caesar in Gallia erat. Gall<span style="color:#c7922c;">ī</span> agricolae erant. R<span style="color:#c7922c;">ō</span>m<span style="color:#c7922c;">ā</span>n<span style="color:#c7922c;">ī</span> milites in terra Gallorum erant. Caesar imperator magnus erat. Milites R<span style="color:#c7922c;">ō</span>m<span style="color:#c7922c;">ā</span>n<span style="color:#c7922c;">ī</span> terram Gallicam amabant. Senatus R<span style="color:#c7922c;">ō</span>m<span style="color:#c7922c;">ā</span>nus Caesarem laudabat.
+        </div>
+        <div style="background:#FFFFFF; border:1px solid #D0D9E8; border-radius:7px; padding:16px 18px;">
+            <div style="font-size:14px; color:#0e1c42; margin-bottom:8px;"><strong>Vocabulary Gloss</strong></div>
+            <div style="font-size:15px; color:#1a2340; line-height:1.9;">
+                <em>Gallia, -ae</em> (f.) &mdash; Gaul (the region) &nbsp;&middot;&nbsp;
+                <em>Gallī, -ōrum</em> (m. pl.) &mdash; the Gauls (the people) &nbsp;&middot;&nbsp;
+                <em>agricola, -ae</em> (m.) &mdash; farmer &nbsp;&middot;&nbsp;
+                <em>miles, militis</em> (m.) &mdash; soldier <span style="color:#999;">(given &mdash; 3rd declension, studied in S2)</span> &nbsp;&middot;&nbsp;
+                <em>terra, -ae</em> (f.) &mdash; land &nbsp;&middot;&nbsp;
+                <em>imperator, -ōris</em> (m.) &mdash; general, commander <span style="color:#999;">(given)</span> &nbsp;&middot;&nbsp;
+                <em>magnus, -a, -um</em> &mdash; great, large <span style="color:#999;">(given &mdash; adjective, studied in S2)</span> &nbsp;&middot;&nbsp;
+                <em>laudābat</em> &mdash; was praising <span style="color:#999;">(given &mdash; imperfect tense, S2; treat as &ldquo;was ___ing&rdquo;)</span> &nbsp;&middot;&nbsp;
+                <em>amābant</em> &mdash; were loving/liked <span style="color:#999;">(given &mdash; imperfect plural)</span> &nbsp;&middot;&nbsp;
+                <em>senatus, -ūs</em> (m.) &mdash; senate <span style="color:#999;">(given)</span>
+            </div>
+        </div>
+        <div style="background:#E8F6FB; border-left:5px solid #2196D0; border-radius:6px; padding:12px 16px; font-size:16px; color:#1a2340; line-height:1.6; margin-top:12px;"><strong>Forms you already own:</strong> <em>erat, erant</em> (esse, Module 10). <em>Caesarem</em> (accusative &mdash; object). <em>Rōmānī</em> (nominative plural, 2nd decl. masc., Module 7). <em>terram</em> (accusative singular, 1st decl., Module 4). <em>Gallōrum</em> is genitive plural &mdash; a &ldquo;whose?&rdquo; ending you have seen in cultural notes but not formally studied; here it simply means &ldquo;of the Gauls.&rdquo;</div>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; PARSE IT YOURSELF</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 4px 0;">Apply what you already own to the passage above.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9989; CHECK YOUR UNDERSTANDING</div>
+            <div class="widget-question">Read each item from the passage and answer.</div>
+            <div class="widget-row" data-correct="b" data-hint="What ending does 'Gallī' end in &mdash; and what does that ending mark?">
+                <div class="widget-row-prompt">In <em>Gallī agricolae erant</em>, what is <em>Gallī</em>?</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; -ī on a 2nd-declension masculine noun is nominative plural, not singular.">Nominative singular</button>
+                    <button data-choice="b" data-fb="Right &mdash; -ī marks 2nd-declension masculine nominative plural: 'Gallī' = 'the Gauls,' the subject.">Nominative plural (subject)</button>
+                    <button data-choice="c" data-fb="Careful &mdash; the accusative plural of this noun would end in -ōs, not -ī.">Accusative plural</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="c" data-hint="Look at the ending: -em is the 1st/2nd-decl-style accusative marker you know from 3rd-declension 'given' words.">
+                <div class="widget-row-prompt">In <em>Senatus Rōmānus Caesarem laudābat</em>, what job does <em>Caesarem</em> play?</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; the subject here is 'Senatus Rōmānus.'">Subject</button>
+                    <button data-choice="b" data-fb="Careful &mdash; there is no preposition in this sentence.">Object of a preposition</button>
+                    <button data-choice="c" data-fb="Right &mdash; 'Caesarem' is the direct object: the Senate was praising Caesar.">Direct object</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="a" data-hint="Find the subject, then translate the verb 'erat' as a form of 'to be.'">
+                <div class="widget-row-prompt">Best translation of <em>Caesar imperator magnus erat</em>?</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Right &mdash; 'Caesar' (subject) 'erat' (was) 'imperator magnus' (a great commander).">Caesar was a great commander.</button>
+                    <button data-choice="b" data-fb="Not quite &mdash; 'erat' is past tense (was), not present (is).">Caesar is a great commander.</button>
+                    <button data-choice="c" data-fb="Careful &mdash; there is no direct object here; 'imperator' completes 'erat' the way a predicate nominative does.">Caesar conquers a great commander.</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 14.03 &mdash; Why Caesar Wrote</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">You'll learn why Caesar published this account at all, and trace five English words straight back to this passage.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; ONE IDEA TO CARRY OUT</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">You just read six sentences a Roman general actually wrote. Every unfamiliar word was glossed &mdash; your job was to trust the endings you already own. That is exactly how you will read every adapted passage from here forward.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; M/J LATIN, BEGINNING &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 14.02 &middot; Caesar in Gaul</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.flip-card').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var flip = e.target.closest('.ow-flip .flip-card');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === row.dataset.correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

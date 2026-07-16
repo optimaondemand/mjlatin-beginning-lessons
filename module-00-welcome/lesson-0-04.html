@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>M/J Latin, Beginning &mdash; Lesson 0.04</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .flip-grid { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+    .flip-card { min-width: 150px; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 14px 16px; cursor: pointer; text-align: center; transition: all 0.15s; }
+    .flip-card:hover { border-color: #55C8E8; }
+    .flip-card .front { font-size: 18px; color: #0E1C42; }
+    .flip-card .hint { font-size: 12px; color: #999; margin-top: 4px; }
+    .flip-card .back { display: none; font-size: 15px; color: #1B6A94; margin-top: 8px; border-top: 1px dashed #C5DCE5; padding-top: 8px; }
+    .flip-card.flipped .back { display: block; }
+    .para { border-collapse: collapse; margin: 14px 0; }
+    .para td, .para th { border: 1px solid #C5DCE5; padding: 9px 16px; font-size: 17px; text-align: center; }
+    .para th { background: #0E1C42; color: #fff; font-weight: normal; font-size: 14px; }
+    .para .lab { background: #EEF1F8; color: #0e1c42; }
+    .para .end { color: #c7922c; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">M/J LATIN, BEGINNING</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 0</div>
+        <div style="font-size: 12px; color: #666;">Welcome</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 0.04</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Scholar's Notebook</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Time</div>
+        <div style="font-size: 16px; color: #0e1c42;">about 20 minutes</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 0.04</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Latin Notebook &mdash; Your Scholar's Tool</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Why do serious students of any subject keep a notebook, and what makes a good one?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">This semester you will keep a Latin notebook &mdash; not just a pile of notes, but a scholar's tool with a long history behind it. Today you'll learn where that tradition comes from and set up the four sections you'll use all year.</div>
+    </div>
+
+    <!-- OBJECTIVES -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what a &ldquo;commonplace book&rdquo; was and how it relates to your Latin notebook.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> name the four sections my Latin notebook should have.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> set up all four sections in a real or digital notebook.</div>
+        </div>
+    </div>
+
+    <!-- MATERIALS -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your Latin notebook (or paper/binder to start one)</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Something to write with</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A way to label or organize pages &mdash; dividers, tabs, or written headers</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; A VERY OLD IDEA</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Roman schoolchildren wrote daily work on wax tablets with a <em>stilus</em>, a pointed stylus &mdash; the flat end could smooth the wax for reuse. For anything meant to last, Romans used papyrus or parchment. Over time, the <em>codex</em> &mdash; a bound book of pages, the direct ancestor of the book you hold today &mdash; replaced the scroll.</p>
+
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin:14px 0;">
+            <div style="background:#EEF1F8; border-radius:7px; padding:10px 16px; font-size:16px; color:#0e1c42;">Wax tablet <span style="color:#666; font-size:14px;">(daily work)</span></div>
+            <div style="font-size: 20px; color: #c7922c; align-self:center;">&rarr;</div>
+            <div style="background:#EEF1F8; border-radius:7px; padding:10px 16px; font-size:16px; color:#0e1c42;">Papyrus / parchment <span style="color:#666; font-size:14px;">(permanent)</span></div>
+            <div style="font-size: 20px; color: #c7922c; align-self:center;">&rarr;</div>
+            <div style="background:#E8F6FB; border-radius:7px; padding:10px 16px; font-size:16px; color:#0e1c42;">Codex <span style="color:#666; font-size:14px;">(bound book, by the 4th century AD)</span></div>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 10px 0 0 0;">Every serious student of Latin from the Renaissance forward kept what scholars called a <em>commonplace book</em> (<em>locus communis</em>, literally &ldquo;common place&rdquo;) &mdash; a place to collect quotations, vocabulary, and grammar notes in one spot. The Renaissance scholar Erasmus organized his entire intellectual life around books like this. Your Latin notebook belongs to that same tradition, in a modern form.</p>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; FOUR SECTIONS, ONE NOTEBOOK</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Your notebook will hold four kinds of entries, built up week by week:</p>
+
+        <div style="display:flex; gap:14px; flex-wrap:wrap; margin:14px 0;">
+            <div style="flex:1; min-width:220px; background:#EEF1F8; border-radius:7px; padding:14px 16px;">
+                <div style="font-size:17px; color:#0e1c42;"><strong>Paradigm Tables</strong></div>
+                <div style="font-size:15px; color:#666; margin-top:6px;">organized charts of the Latin forms you're learning</div>
+            </div>
+            <div style="flex:1; min-width:220px; background:#E8F6FB; border-radius:7px; padding:14px 16px;">
+                <div style="font-size:17px; color:#0e1c42;"><strong>Vocabulary Lists</strong></div>
+                <div style="font-size:15px; color:#666; margin-top:6px;">Latin words with their meanings and English derivatives</div>
+            </div>
+            <div style="flex:1; min-width:220px; background:#EEF1F8; border-radius:7px; padding:14px 16px;">
+                <div style="font-size:17px; color:#0e1c42;"><strong>Grammar Notes</strong></div>
+                <div style="font-size:15px; color:#666; margin-top:6px;">your own explanations, in your own words, of how the Latin system works</div>
+            </div>
+            <div style="flex:1; min-width:220px; background:#E8F6FB; border-radius:7px; padding:14px 16px;">
+                <div style="font-size:17px; color:#0e1c42;"><strong>Derivative Logs</strong></div>
+                <div style="font-size:15px; color:#666; margin-top:6px;">English words you trace back to their Latin origins</div>
+            </div>
+        </div>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9989; CHECK YOUR UNDERSTANDING</div>
+            <div class="widget-question">Which section of the notebook fits each description?</div>
+            <div class="widget-row" data-correct="a" data-hint="Think of the word &ldquo;paradigm&rdquo; &mdash; a repeating pattern.">
+                <div class="widget-row-prompt">Organized charts of the Latin forms you're learning&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Right &mdash; that's the Paradigm Tables section.">Paradigm Tables</button>
+                    <button data-choice="b" data-fb="Not quite &mdash; that's Derivative Logs. Charts of forms go in Paradigm Tables.">Derivative Logs</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="b" data-hint="This section pairs a Latin word with its meaning and English relatives.">
+                <div class="widget-row-prompt">Latin words with meanings and English derivatives&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; that's Grammar Notes. Word-plus-meaning entries go in Vocabulary Lists.">Grammar Notes</button>
+                    <button data-choice="b" data-fb="Right &mdash; that's the Vocabulary Lists section.">Vocabulary Lists</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="a" data-hint="This is where you write the system down in your own words.">
+                <div class="widget-row-prompt">Your own explanation, in your own words, of how the system works&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Right &mdash; that's the Grammar Notes section.">Grammar Notes</button>
+                    <button data-choice="b" data-fb="Not quite &mdash; that's Paradigm Tables. Your own explanations go in Grammar Notes.">Paradigm Tables</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="b" data-hint="This is the section for tracing English words back to Latin.">
+                <div class="widget-row-prompt">English words traced back to their Latin roots&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; that's Vocabulary Lists. Tracing English words back to Latin goes in Derivative Logs.">Vocabulary Lists</button>
+                    <button data-choice="b" data-fb="Right &mdash; that's the Derivative Logs section.">Derivative Logs</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; SET IT UP NOW</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Take five minutes right now and set up your notebook. Check off each step as you go:</p>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9744;</span>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6;">Label a section <strong>Paradigm Tables</strong>.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9744;</span>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6;">Label a section <strong>Vocabulary Lists</strong>.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9744;</span>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6;">Label a section <strong>Grammar Notes</strong>.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9744;</span>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6;">Label a section <strong>Derivative Logs</strong>.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9744;</span>
+            <div style="font-size: 17px; color: #1a2340; line-height: 1.6;">Copy your Lesson 0.02 abbreviations table and your Lesson 0.01 place-names list into the notebook &mdash; you'll want both ready before the Module 0 quiz.</div>
+        </div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#128173; QUICK CHECK-IN &middot; NO WRONG ANSWER</div>
+            <div class="widget-question">Which of the four sections do you think you'll use the most this semester?</div>
+            <div class="widget-options">
+                <button data-response="Good instinct &mdash; the paradigm tables are what you'll come back to again and again once the grammar starts in Module 1.">Paradigm Tables</button>
+                <button data-response="That's a strong pick &mdash; vocabulary is what lets you actually read Latin sentences once you know the grammar.">Vocabulary Lists</button>
+                <button data-response="Great choice &mdash; putting the system into your own words is one of the best ways to actually learn it.">Grammar Notes</button>
+                <button data-response="Fun pick &mdash; the Derivative Log is where you'll collect the most surprising discoveries all year.">Derivative Logs</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">5</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 0.05 &mdash; SPQR and Review</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">You'll read your first real Latin phrase, look at how far Rome's reach extended, and get ready for the Module 0 quiz.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; ONE IDEA TO CARRY OUT</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Set up your four notebook sections today &mdash; <strong>Paradigm Tables, Vocabulary Lists, Grammar Notes, Derivative Logs</strong> &mdash; so they're ready to fill in starting with Module 1.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; M/J LATIN, BEGINNING &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 0.04 &middot; The Latin Notebook &mdash; Your Scholar's Tool</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.flip-card').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var flip = e.target.closest('.ow-flip .flip-card');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === row.dataset.correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

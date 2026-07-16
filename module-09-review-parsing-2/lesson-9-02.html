@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>M/J Latin, Beginning &mdash; Lesson 9.02</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .flip-grid { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+    .flip-card { min-width: 150px; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 14px 16px; cursor: pointer; text-align: center; transition: all 0.15s; }
+    .flip-card:hover { border-color: #55C8E8; }
+    .flip-card .front { font-size: 18px; color: #0E1C42; }
+    .flip-card .hint { font-size: 12px; color: #999; margin-top: 4px; }
+    .flip-card .back { display: none; font-size: 15px; color: #1B6A94; margin-top: 8px; border-top: 1px dashed #C5DCE5; padding-top: 8px; }
+    .flip-card.flipped .back { display: block; }
+    .para { border-collapse: collapse; margin: 14px 0; }
+    .para td, .para th { border: 1px solid #C5DCE5; padding: 9px 16px; font-size: 17px; text-align: center; }
+    .para th { background: #0E1C42; color: #fff; font-weight: normal; font-size: 14px; }
+    .para .lab { background: #EEF1F8; color: #0e1c42; }
+    .para .end { color: #c7922c; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">M/J LATIN, BEGINNING</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 9</div>
+        <div style="font-size: 12px; color: #c7922c; font-weight: bold;">GATE MODULE</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 9.02</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Chant of Three</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Time</div>
+        <div style="font-size: 16px; color: #0e1c42;">about 20 minutes</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 9.02</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Chant of Three</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Can you say all three paradigms without stopping to think?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Today's whole job is the <strong>Memory Work</strong>: all three paradigm tables, side by side, chanted until they come without hesitation. This is the single most important lesson of the week &mdash; everything later in this module depends on this table being automatic.</div>
+    </div>
+
+    <!-- MEMORY WORK -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 10px;">&#127925; MEMORY WORK &middot; THE THREE-COLUMN TABLE</div>
+        <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-bottom: 10px;">Your target: recite every cell of this table from memory, in this order, for all three columns.</div>
+        <table class="para">
+            <tr><th></th><th>1st Decl. Fem.</th><th>2nd Decl. Masc.</th><th>2nd Decl. Neut.</th></tr>
+            <tr><td class="lab">Nom. Sg.</td><td>-<span class="end">a</span></td><td>-<span class="end">us</span></td><td>-<span class="end">um</span></td></tr>
+            <tr><td class="lab">Acc. Sg.</td><td>-<span class="end">am</span></td><td>-<span class="end">um</span></td><td>-<span class="end">um</span></td></tr>
+            <tr><td class="lab">Nom. Pl.</td><td>-<span class="end">ae</span></td><td>-<span class="end">ī</span></td><td>-<span class="end">a</span></td></tr>
+            <tr><td class="lab">Acc. Pl.</td><td>-<span class="end">ās</span></td><td>-<span class="end">ōs</span></td><td>-<span class="end">a</span></td></tr>
+        </table>
+        <div style="font-size: 15px; color: #666; line-height: 1.55; margin-bottom: 8px;">Example words: <em>puella / puellam / puellae / puellās</em> &middot; <em>servus / servum / servī / servōs</em> &middot; <em>bellum / bellum / bella / bella</em>.</div>
+        <div style="font-size: 15px; color: #666; line-height: 1.55;"><strong>Column chant:</strong> cover the right two columns and recite the 1st declension column top to bottom (<em>-a, -am, -ae, -ās</em>). Uncover column two; recite 2nd masc. (<em>-us, -um, -ī, -ōs</em>). Uncover column three; recite 2nd neut. (<em>-um, -um, -a, -a</em>). Then cover all three and recite from memory.</div>
+    </div>
+
+    <!-- OBJECTIVES -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> recite the full three-column comparison table from memory.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> state the neuter rule: nominative and accusative are always identical for neuter nouns.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> name the three places where these paradigms can look alike &mdash; and tell them apart.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; CHECK-IN</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#128173; QUICK CHECK-IN &middot; NO WRONG ANSWER</div>
+            <div class="widget-question">Try the full three-column chant out loud right now, without looking. How did it go?</div>
+            <div class="widget-options">
+                <button data-response="That's exactly the goal &mdash; automatic recall across all three columns is what this module is training. Keep it warm with one more pass before you move on.">Got all twelve cells!</button>
+                <button data-response="Totally normal the first time you chant three columns together. Chant it two or three more times, column by column, then try the whole thing again.">Missed a few cells</button>
+                <button data-response="No problem at all &mdash; look at the table again, chant one column at a time, and then try covering it. Repetition is the whole method.">I need another look</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE THREE CRITICAL OVERLAPS</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Three cells in your table produce forms that look identical across declensions. Knowing them by name is what keeps you from guessing wrong.</p>
+        <div style="background:#EEF1F8; border-radius:7px; padding:12px 16px; margin-bottom:8px; font-size:16px; color:#1a2340; line-height:1.6;"><strong>Overlap 1:</strong> 2nd decl. masc. accusative singular = 2nd decl. neut. nom./acc. singular. Both are <strong>-um</strong>. <em>Servum</em> (2nd masc., acc. sg.) and <em>bellum</em> (2nd neut., nom./acc. sg.) look identical &mdash; only the dictionary entry's gender label tells them apart.</div>
+        <div style="background:#E8F6FB; border-radius:7px; padding:12px 16px; margin-bottom:8px; font-size:16px; color:#1a2340; line-height:1.6;"><strong>Overlap 2:</strong> 2nd decl. neut. plural is always <strong>-a</strong> (<em>bella, templa</em>) &mdash; never <em>-ae</em>. 1st decl. nominative plural is always <strong>-ae</strong> (<em>puellae</em>) &mdash; never <em>-a</em>. Read the ending carefully; it's easy to blur the two when reading quickly.</div>
+        <div style="background:#EEF1F8; border-radius:7px; padding:12px 16px; font-size:16px; color:#1a2340; line-height:1.6;"><strong>Overlap 3:</strong> a form ending in <strong>-a</strong> could be 1st decl. nominative singular (<em>puella</em>) or 2nd decl. neuter plural (<em>bella</em>). The dictionary entry resolves it every time: <em>puella, puellae</em> f. versus <em>bellum, bellī</em> n.</div>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; TEST THE OVERLAPS</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 4px 0;">Use the dictionary entry given for each form to resolve the overlap.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9989; CHECK YOUR UNDERSTANDING</div>
+            <div class="widget-question">Parse each form correctly using the dictionary entry given.</div>
+            <div class="widget-row" data-correct="c" data-hint="Neuter nouns never distinguish nominative from accusative.">
+                <div class="widget-row-prompt">templum <span style="color:#999;">(templum, templī n.)</span></div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; for a neuter noun, the accusative singular looks exactly the same as the nominative.">Only nominative singular</button>
+                    <button data-choice="b" data-fb="Not quite &mdash; for a neuter noun, the nominative singular looks exactly the same as the accusative.">Only accusative singular</button>
+                    <button data-choice="c" data-fb="Right &mdash; the neuter rule: nominative and accusative singular are identical for a 2nd declension neuter noun.">Nominative or accusative singular (neuter rule)</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="a" data-hint="bellum, bellī is neuter — its plural is always -a, never -ae.">
+                <div class="widget-row-prompt">bella <span style="color:#999;">(bellum, bellī n.)</span></div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Right &mdash; the entry is neuter (n.), so this is the 2nd declension neuter nom./acc. plural &mdash; not a 1st declension form.">Nom./acc. plural, 2nd decl. neuter</button>
+                    <button data-choice="b" data-fb="Careful &mdash; 1st declension nominative plural ends in -ae, not -a. The dictionary entry (bellī, n.) rules out 1st declension entirely.">Nominative plural, 1st decl. fem.</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="b" data-hint="via, viae is 1st declension feminine — this is its nominative singular.">
+                <div class="widget-row-prompt">via <span style="color:#999;">(via, viae f.)</span></div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Careful &mdash; the entry is feminine (f.) with genitive -ae, so this is 1st declension, not 2nd declension neuter.">Nom./acc. plural, 2nd decl. neuter</button>
+                    <button data-choice="b" data-fb="Right &mdash; genitive -ae and feminine gender: 1st declension nominative singular.">Nominative singular, 1st decl. fem.</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="b" data-hint="dominum ends in -um — check the entry's gender to resolve the overlap.">
+                <div class="widget-row-prompt">dominum <span style="color:#999;">(dominus, dominī m.)</span></div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; the entry is masculine (m.), so this -um form cannot be a neuter nominative/accusative.">Nom./acc. singular, 2nd decl. neuter</button>
+                    <button data-choice="b" data-fb="Right &mdash; the entry is masculine (m.), so -um here is the 2nd declension masculine accusative singular.">Accusative singular, 2nd decl. masc.</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 9.03 &mdash; The Roman World in Three Declensions</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">You'll see how the three declensions map onto real Roman geography and civic life, meet the Senate and Caesar, and trace today's words to their English descendants.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; ONE IDEA TO CARRY OUT</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">One system, three columns, three overlaps you now know by name. Chant the table once more before you close the page &mdash; it's the backbone of everything this week reviews.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; M/J LATIN, BEGINNING &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 9.02 &middot; The Chant of Three</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.flip-card').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var flip = e.target.closest('.ow-flip .flip-card');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === row.dataset.correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

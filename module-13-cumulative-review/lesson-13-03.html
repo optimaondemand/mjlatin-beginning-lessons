@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>M/J Latin, Beginning &mdash; Lesson 13.03</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    /* flip-card engine (vocabulary) */
+    .flip-grid { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+    .flip-card { min-width: 150px; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 14px 16px; cursor: pointer; text-align: center; transition: all 0.15s; }
+    .flip-card:hover { border-color: #55C8E8; }
+    .flip-card .front { font-size: 18px; color: #0E1C42; }
+    .flip-card .hint { font-size: 12px; color: #999; margin-top: 4px; }
+    .flip-card .back { display: none; font-size: 15px; color: #1B6A94; margin-top: 8px; border-top: 1px dashed #C5DCE5; padding-top: 8px; }
+    .flip-card.flipped .back { display: block; }
+    /* paradigm table */
+    .para { border-collapse: collapse; margin: 14px 0; }
+    .para td, .para th { border: 1px solid #C5DCE5; padding: 9px 16px; font-size: 17px; text-align: center; }
+    .para th { background: #0E1C42; color: #fff; font-weight: normal; font-size: 14px; }
+    .para .lab { background: #EEF1F8; color: #0e1c42; }
+    .para .end { color: #c7922c; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">M/J LATIN, BEGINNING</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 13</div>
+        <div style="font-size: 12px; color: #666;">Cumulative Review</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 13.03</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Reading the Roman World</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Time</div>
+        <div style="font-size: 16px; color: #0e1c42;">about 20 minutes</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 13.03</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Reading the Roman World</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">What does your S1 vocabulary let you say about the Roman world?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Your S1 vocabulary maps a whole society: <em>puella, femina, domina</em> &mdash; women and girls of the household; <em>servus, ancilla</em> &mdash; enslaved people, a large part of the population of Roman Italy; <em>dominus, agricola, nauta</em> &mdash; master, farmer, sailor. Today you translate sentences about that world, and revisit the best derivatives from the whole semester.</div>
+    </div>
+
+    <!-- OBJECTIVES -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> translate mixed sentences using nouns, esse, and 1st conjugation verbs together.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what at least three S1 vocabulary words reveal about Roman society.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> connect S1 vocabulary to its English derivatives across the whole semester.</div>
+        </div>
+    </div>
+
+    <!-- MATERIALS -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your Latin notebook</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Something to write with</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE ROMAN WORLD, IN REVIEW</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Rome at the height of the Republic was a city of hundreds of thousands of people, organized around the <em>forum</em> &mdash; the public square where courts, temples, and markets clustered. City dwellers lived in <em>insulae</em>, apartment blocks that could rise six or seven stories. Outside the city, Roman roads (<em>viae</em>) radiated across Italy; the famous <em>Via Appia</em>, begun in 312 B.C., ran 350 Roman miles south to Brundisium.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">The <em>nauta</em> worked the Mediterranean, which Romans called <em>Mare Nostrum</em> &mdash; &ldquo;our sea.&rdquo; The <em>agricola</em> worked the land. Many large farms (<em>latifundia</em>) were worked by enslaved laborers (<em>servi</em>) under an overseer. Your S1 grammar &mdash; nominative, accusative, and esse &mdash; is exactly what a Roman writer needed to describe who was acting and who was acted upon in this world.</p>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; DERIVATIVE MINUTE &mdash; THE BEST OF THE SEMESTER</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Tap each card for one of the most productive Latin roots you've studied this semester.</p>
+
+        <div class="optima-widget ow-flip">
+            <div class="widget-kicker">&#128064; TAP TO FLIP &middot; SELF-QUIZ</div>
+            <div class="flip-grid">
+                <div class="flip-card"><div class="front">servus</div><div class="hint">tap to check</div><div class="back"><strong>servile, service, servant</strong> &mdash; the whole English word family around &ldquo;serving&rdquo;</div></div>
+                <div class="flip-card"><div class="front">portō</div><div class="hint">tap to check</div><div class="back"><strong>transport, portable, export, import</strong> &mdash; all preserve the &ldquo;carrying&rdquo; sense</div></div>
+                <div class="flip-card"><div class="front">trāns</div><div class="hint">tap to check</div><div class="back">used directly as an English prefix: <strong>transport, translate, transform</strong></div></div>
+                <div class="flip-card"><div class="front">esse</div><div class="hint">tap to check</div><div class="back"><strong>essence, essential</strong> &mdash; the philosophical vocabulary of what something truly IS</div></div>
+                <div class="flip-card"><div class="front">amō</div><div class="hint">tap to check</div><div class="back"><strong>amorous, amateur</strong> &mdash; one who does something for love, not pay</div></div>
+                <div class="flip-card"><div class="front">forum</div><div class="hint">tap to check</div><div class="back"><strong>forensic</strong> &mdash; belonging to the courts and public debate held in the forum</div></div>
+            </div>
+            <button class="widget-reset">Reset all</button>
+        </div>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; MIXED TRANSLATION PRACTICE</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 4px 0;">Each sentence mixes noun types, esse or a 1st conjugation verb, and sometimes a preposition. Translate, then check.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9989; CHECK YOUR UNDERSTANDING</div>
+            <div class="widget-question">Choose the best translation.</div>
+            <div class="widget-row" data-correct="b" data-hint="agricolae is plural subject; terrās is plural direct object; amant is 3rd plural.">
+                <div class="widget-row-prompt"><em>Agricolae terrās longās amant.</em> <span style="color:#999;">(longās = long, given)</span></div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; agricolae is plural (&ldquo;farmers&rdquo;), not singular, and terrās is the object, plural.">The farmer loves the long land.</button>
+                    <button data-choice="b" data-fb="Right &mdash; plural subject, plural object, plural verb: &ldquo;The farmers love the long lands.&rdquo;">The farmers love the long lands.</button>
+                    <button data-choice="c" data-fb="Careful &mdash; terrās is the direct object here, not the subject.">The lands love the farmers.</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="c" data-hint="dominus is the subject; bonus (given) is a predicate adjective after est.">
+                <div class="widget-row-prompt"><em>Dominus bonus est.</em> <span style="color:#999;">(bonus = good, given)</span></div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; there's no direct object here; est links subject and predicate.">The master loves a good man.</button>
+                    <button data-choice="b" data-fb="Not quite &mdash; there's no plural form in this sentence.">The masters are good.</button>
+                    <button data-choice="c" data-fb="Right &mdash; est links the subject dominus to the predicate adjective bonus: &ldquo;The master is good.&rdquo;">The master is good.</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="a" data-hint="Ancillae is the subject; dominum is the object; per viam longam is the preposition phrase.">
+                <div class="widget-row-prompt"><em>Ancillae dominum per viam longam ad oppidum portant.</em> <span style="color:#999;">(longam = long, given)</span></div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Right &mdash; ancillae (subject, plural) carry dominum (object) through the road to the town.">The slave-women carry the master through the long road to the town.</button>
+                    <button data-choice="b" data-fb="Careful &mdash; dominum is accusative, the object; ancillae is the subject doing the carrying.">The master carries the slave-women on the long road from the town.</button>
+                    <button data-choice="c" data-fb="Not quite &mdash; viam (the road) is not the subject; ancillae is.">The long road carries the master and the slave-women to the town.</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="b" data-hint="Servī is plural subject; oppida is plural object; parant is 3rd plural.">
+                <div class="widget-row-prompt"><em>Servī oppida parant.</em></div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; oppida is the direct object here, plural, not the subject.">The towns prepare the slaves.</button>
+                    <button data-choice="b" data-fb="Right &mdash; servī (subject, plural) prepare oppida (object, plural): &ldquo;The slaves prepare the towns.&rdquo;">The slaves prepare the towns.</button>
+                    <button data-choice="c" data-fb="Careful &mdash; parant is plural (&ldquo;they prepare&rdquo;), matching the plural subject servī.">The slave prepares a town.</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">4</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 13.04 &mdash; The Hardest Mix</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">You'll apply a full parsing checklist to sentences that combine every noun type, a verb, and a preposition &mdash; the toughest combination this semester offers.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; ONE IDEA TO CARRY OUT</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Your S1 vocabulary is not just a word list &mdash; it maps how Romans lived. Every translation you do is also a small act of cultural understanding.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; M/J LATIN, BEGINNING &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 13.03 &middot; Reading the Roman World</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.flip-card').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var flip = e.target.closest('.ow-flip .flip-card');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === row.dataset.correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

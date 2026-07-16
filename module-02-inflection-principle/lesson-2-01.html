@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>M/J Latin, Beginning &mdash; Lesson 2.01</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    /* flip-card engine (vocabulary) */
+    .flip-grid { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+    .flip-card { min-width: 150px; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 14px 16px; cursor: pointer; text-align: center; transition: all 0.15s; }
+    .flip-card:hover { border-color: #55C8E8; }
+    .flip-card .front { font-size: 18px; color: #0E1C42; }
+    .flip-card .hint { font-size: 12px; color: #999; margin-top: 4px; }
+    .flip-card .back { display: none; font-size: 15px; color: #1B6A94; margin-top: 8px; border-top: 1px dashed #C5DCE5; padding-top: 8px; }
+    .flip-card.flipped .back { display: block; }
+    /* paradigm table */
+    .para { border-collapse: collapse; margin: 14px 0; }
+    .para td, .para th { border: 1px solid #C5DCE5; padding: 9px 16px; font-size: 17px; text-align: center; }
+    .para th { background: #0E1C42; color: #fff; font-weight: normal; font-size: 14px; }
+    .para .lab { background: #EEF1F8; color: #0e1c42; }
+    .para .end { color: #c7922c; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">M/J LATIN, BEGINNING</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">The Inflection Principle</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 2.01</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Endings, Not Order</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Time</div>
+        <div style="font-size: 16px; color: #0e1c42;">about 20 minutes</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 2.01</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Endings, Not Order</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">What does a word's ending tell you that word order cannot?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Read this: <strong>&ldquo;The dog bit the man.&rdquo;</strong> Now read this: <strong>&ldquo;The man bit the dog.&rdquo;</strong> Same words, completely different meaning &mdash; because English decides who-does-what by <em>word order</em>. Latin decides it a different way: by changing the <em>ending</em> of the word. That single fact is the key to this entire course.</div>
+    </div>
+
+    <!-- OBJECTIVES -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what <span style="border-bottom: 2px dotted #c7922c; cursor: help;" title="Inflection: the systematic change of a word's ending to signal its grammatical job in the sentence.">inflection</span> means and why Latin relies on it instead of word order.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> show that English pronouns (<em>he/him, she/her, they/them</em>) already work this same way.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> recognize a first set of Roman geographic names I already half-know.</div>
+        </div>
+    </div>
+
+    <!-- MATERIALS -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your Latin notebook</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Something to write with</div>
+        </div>
+    </div>
+
+    <!-- MEMORY WORK -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 10px;">&#127925; MEMORY WORK &middot; NEW VOCABULARY</div>
+        <div style="font-size: 16px; color: #1a2340; line-height: 1.6; margin-bottom: 6px;">These are the first Roman place names you'll learn &mdash; and you already half-know several of them:</div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <div style="background:#EEF1F8; border-radius:7px; padding:10px 16px; font-size:16px; color:#0e1c42;"><em>Africa</em> &mdash; Africa</div>
+            <div style="background:#EEF1F8; border-radius:7px; padding:10px 16px; font-size:16px; color:#0e1c42;"><em>Britannia</em> &mdash; Britain</div>
+            <div style="background:#EEF1F8; border-radius:7px; padding:10px 16px; font-size:16px; color:#0e1c42;"><em>Italia</em> &mdash; Italy</div>
+            <div style="background:#EEF1F8; border-radius:7px; padding:10px 16px; font-size:16px; color:#0e1c42;"><em>Roma</em> &mdash; Rome</div>
+            <div style="background:#EEF1F8; border-radius:7px; padding:10px 16px; font-size:16px; color:#0e1c42;"><em>provincia</em> &mdash; province</div>
+            <div style="background:#EEF1F8; border-radius:7px; padding:10px 16px; font-size:16px; color:#0e1c42;"><em>insula</em> &mdash; island</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; WORDS WE KNOW</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Before the new grammar idea, warm up with words you already half-know. Each of these Roman place names left a mark on English.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#128173; QUICK CHECK-IN &middot; NO WRONG ANSWER</div>
+            <div class="widget-question">The Latin word <em>provincia</em> gave English its word <strong>province</strong>, and <em>insula</em> gave us <strong>insular</strong> and <strong>insulate</strong>. What do you think an &ldquo;insular&rdquo; attitude means?</div>
+            <div class="widget-options">
+                <button data-response="Exactly right &mdash; 'insular' describes someone cut off from outside ideas, like an island (insula) cut off from the mainland.">Cut off from outside ideas, like an island</button>
+                <button data-response="Good guess, but 'insular' isn't about weather &mdash; it comes from insula (island) and describes isolation, not climate.">Related to warm, sunny weather</button>
+                <button data-response="Reasonable instinct, but that meaning belongs to a different word family. 'Insular' comes from insula (island) and means isolated or cut off.">Related to being extremely social</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE ENDING DOES THE WORK</div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 4px 0 8px 0;">English uses <span style="color:#c7922c;">word order</span>. Latin uses <span style="color:#c7922c;">endings</span>.</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In English, &ldquo;The dog bit the man&rdquo; and &ldquo;The man bit the dog&rdquo; mean opposite things, because English tells you who's who by <em>where the word sits</em>. Move the words, and the meaning flips.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Latin does not depend on position this way. Latin marks a noun's job &mdash; subject, object, or something else &mdash; by changing its <strong><span style="border-bottom: 2px dotted #c7922c; cursor: help;" title="Inflection: the systematic change of a word's ending to signal its grammatical job.">ending</span></strong>. This is called <strong>inflection</strong>, and a language built this way is an <strong>inflected language</strong>. Latin is one of the most thoroughly inflected languages of the ancient world.</p>
+
+        <div style="background:#E8F6FB; border-left:5px solid #2196D0; border-radius:6px; padding:12px 16px; font-size:16px; color:#1a2340; line-height:1.6; margin: 10px 0;">&#128161; <strong>Here's why this matters for the whole year:</strong> because Latin's endings carry the meaning, a Roman writer could arrange words in almost any order for style or emphasis without losing clarity. This is why Latin has <strong>declensions</strong> (noun-ending patterns) and <strong>conjugations</strong> (verb-ending patterns) &mdash; you'll meet both this year.</div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 14px 0 8px 0;">Here's the surprising part: <strong>you already do this in English</strong> &mdash; just with pronouns, not every noun.</p>
+        <div style="display:flex; gap:14px; flex-wrap:wrap; margin:14px 0;">
+            <div style="flex:1; min-width:220px; background:#EEF1F8; border-radius:7px; padding:14px 16px;">
+                <div style="font-size:20px; color:#0e1c42;"><strong>He</strong> laughed.</div>
+                <div style="font-size:15px; color:#666; margin-top:6px;">subject form &mdash; he is doing the laughing</div>
+            </div>
+            <div style="flex:1; min-width:220px; background:#E8F6FB; border-radius:7px; padding:14px 16px;">
+                <div style="font-size:20px; color:#0e1c42;">The crowd watched <strong>him</strong>.</div>
+                <div style="font-size:15px; color:#666; margin-top:6px;">object form &mdash; he is being watched</div>
+            </div>
+        </div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">&ldquo;Him laughed&rdquo; sounds wrong to your ear immediately &mdash; because English pronouns are still inflected. Latin simply applies this same idea to <em>every</em> noun, not just pronouns. In grammar, these different forms are called <strong>cases</strong>: <em>he</em> is the <strong>nominative case</strong> (subject form), and <em>him</em> is the <strong>accusative case</strong> (object form). This module introduces only the nominative &mdash; you'll meet the accusative later this year.</p>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; SPOT THE CASE</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 4px 0;">For each sentence, decide whether the bold pronoun is doing the action (subject) or receiving it (object).</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9989; CHECK YOUR UNDERSTANDING</div>
+            <div class="widget-question">Is the bold pronoun the subject or the object?</div>
+            <div class="widget-row" data-correct="b" data-hint="Ask: is the pronoun doing the action, or receiving it?">
+                <div class="widget-row-prompt">The senator addressed <strong>him</strong>.</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; 'him' is receiving the action of being addressed. That makes it the object.">subject</button>
+                    <button data-choice="b" data-fb="Right &mdash; 'him' receives the senator's action, so it is the object (accusative) form.">object</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="a" data-hint="Who is doing the crossing?">
+                <div class="widget-row-prompt"><strong>They</strong> crossed the river at dawn.</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Right &mdash; 'they' is doing the crossing, so it is the subject (nominative) form.">subject</button>
+                    <button data-choice="b" data-fb="Careful &mdash; 'they' is doing the action here, which makes it the subject, not the object.">object</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="b" data-hint="Is the crowd surrounding her, or is she surrounding the crowd?">
+                <div class="widget-row-prompt">The crowd surrounded <strong>her</strong>.</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; 'her' is receiving the crowd's action, so it is the object form.">subject</button>
+                    <button data-choice="b" data-fb="Right &mdash; 'her' receives the action of being surrounded, so it is the object (accusative) form.">object</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="a" data-hint="Who is doing the speaking?">
+                <div class="widget-row-prompt"><strong>She</strong> spoke first.</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Right &mdash; 'she' performs the action of speaking, so it is the subject (nominative) form.">subject</button>
+                    <button data-choice="b" data-fb="Careful &mdash; 'she' is performing the action here, which makes it the subject, not the object.">object</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 2.02 &mdash; Sum, Es, Est&hellip;</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">You'll memorize the complete present tense of Latin's most important verb, <em>esse</em> (to be) &mdash; six forms you'll use for the rest of the year.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; ONE IDEA TO CARRY OUT</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">English shows subject vs. object with <strong>word order</strong> (and, for pronouns, with a changed ending). Latin shows it with a changed <strong>ending</strong> &mdash; on every noun, every time. Say it before you close the page: <em>the ending, not the order, does the work.</em></p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; M/J LATIN, BEGINNING &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 2.01 &middot; Endings, Not Order</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.flip-card').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var flip = e.target.closest('.ow-flip .flip-card');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === row.dataset.correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

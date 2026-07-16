@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>M/J Latin, Beginning &mdash; Lesson 14.04</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    /* flip-card engine (vocabulary) */
+    .flip-grid { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+    .flip-card { min-width: 150px; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 14px 16px; cursor: pointer; text-align: center; transition: all 0.15s; }
+    .flip-card:hover { border-color: #55C8E8; }
+    .flip-card .front { font-size: 18px; color: #0E1C42; }
+    .flip-card .hint { font-size: 12px; color: #999; margin-top: 4px; }
+    .flip-card .back { display: none; font-size: 15px; color: #1B6A94; margin-top: 8px; border-top: 1px dashed #C5DCE5; padding-top: 8px; }
+    .flip-card.flipped .back { display: block; }
+    /* paradigm table */
+    .para { border-collapse: collapse; margin: 14px 0; }
+    .para td, .para th { border: 1px solid #C5DCE5; padding: 9px 16px; font-size: 17px; text-align: center; }
+    .para th { background: #0E1C42; color: #fff; font-weight: normal; font-size: 14px; }
+    .para .lab { background: #EEF1F8; color: #0e1c42; }
+    .para .end { color: #c7922c; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">M/J LATIN, BEGINNING</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 14</div>
+        <div style="font-size: 12px; color: #666;">Toward Adapted Texts</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 14.04</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Cicero and the Forum</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Time</div>
+        <div style="font-size: 16px; color: #0e1c42;">about 20 minutes</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 14.04</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Cicero and the Forum</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">What happens when the greatest Latin prose stylist ever known writes a simple sentence?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">You meet a second real Roman author today: Cicero, a lawyer and politician whose Latin generations of students imitated. You'll run a step-by-step reader's checklist on his adapted passage, then look at what ordinary Romans carved into stone.</div>
+    </div>
+
+    <!-- MEMORY WORK -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 10px;">&#127925; MEMORY WORK &middot; PARSE BEFORE YOU READ</div>
+        <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-bottom: 10px;">Before you read today's lesson, parse this short Roman gravestone inscription in your notebook &mdash; work from memory, do not look anything up:</div>
+        <div style="background:#EEF1F8; border-radius:7px; padding:14px 18px; font-size:19px; color:#0e1c42; margin-bottom:10px;">Marcia puella bona hic est. <span style="font-size:15px; color:#666;">(&ldquo;Marcia, a good girl, is here.&rdquo;)</span></div>
+        <div style="font-size:16px; color:#1a2340; line-height:1.6;">Write: (1) the case and function of <em>Marcia</em>; (2) the case and function of <em>puella</em>; (3) what <em>est</em> tells you about person, number, and tense. (<em>bona</em> is an adjective &mdash; take as given; <em>hic</em> means &ldquo;here&rdquo; and is not a noun form.)</div>
+    </div>
+
+    <!-- OBJECTIVES -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe who Cicero was and why his Latin prose is famous.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> apply a step-by-step reader's checklist to a new adapted passage.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what a Roman inscription records and who typically wrote one.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; MEETING CICERO</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Marcus Tullius Cicero (106&ndash;43 B.C.) is, by most measures, the greatest Latin prose stylist who ever lived. He was not a general like Caesar &mdash; he was a lawyer and politician who rose to Rome's highest office, <em>consul</em>, almost entirely through the force of his speaking and writing. His most famous political act as consul was suppressing a conspiracy led by Catiline to overthrow the government; he defended that decision, and its consequences, for the rest of his life.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">Cicero's real Latin is long and complex, full of subordinate clauses and careful rhythm. The passage below is simplified considerably &mdash; but even simplified, you are reading a man who spent his whole adult life crafting words with conscious artistry. Every word choice was deliberate.</p>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE READER'S CHECKLIST</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Run this checklist on every sentence: (1) find the verb, (2) find its nominative subject, (3) find its accusative object if there is one, (4) check the gloss for anything unfamiliar, (5) translate.</p>
+        <div style="background:#EEF1F8; border-radius:7px; padding:18px 20px; font-size:19px; color:#0e1c42; line-height:1.85; margin-bottom:14px;">
+            R<span style="color:#c7922c;">ō</span>ma magna est. R<span style="color:#c7922c;">ō</span>m<span style="color:#c7922c;">ā</span>n<span style="color:#c7922c;">ī</span> cives boni sunt. Senatus R<span style="color:#c7922c;">ō</span>m<span style="color:#c7922c;">ā</span>nus in foro est. Oratores in foro orant. Cicero orator clarus erat. Cicero patriam amabat. Patria in periculo erat.
+        </div>
+        <div style="background:#FFFFFF; border:1px solid #D0D9E8; border-radius:7px; padding:16px 18px;">
+            <div style="font-size:14px; color:#0e1c42; margin-bottom:8px;"><strong>Vocabulary Gloss</strong></div>
+            <div style="font-size:15px; color:#1a2340; line-height:1.9;">
+                <em>cives</em> (m. pl., nom.) &mdash; citizens <span style="color:#999;">(given &mdash; 3rd decl., studied in S2)</span> &nbsp;&middot;&nbsp;
+                <em>forum, -ī</em> (n.) &mdash; the Forum, Rome's public square &nbsp;&middot;&nbsp;
+                <em>orator, -ōris</em> (m.) &mdash; a speaker <span style="color:#999;">(given)</span> &nbsp;&middot;&nbsp;
+                <em>orant</em> &mdash; they speak/plead (1st conj., 3rd pl. present &mdash; you know this form) &nbsp;&middot;&nbsp;
+                <em>clarus, -a, -um</em> &mdash; famous, distinguished <span style="color:#999;">(given &mdash; adjective)</span> &nbsp;&middot;&nbsp;
+                <em>patria, -ae</em> (f.) &mdash; fatherland, homeland &nbsp;&middot;&nbsp;
+                <em>periculum, -ī</em> (n.) &mdash; danger &nbsp;&middot;&nbsp;
+                <em>amābat</em> &mdash; was loving/loved <span style="color:#999;">(given &mdash; imperfect)</span>
+            </div>
+        </div>
+        <div style="background:#E8F6FB; border-left:5px solid #2196D0; border-radius:6px; padding:12px 16px; font-size:16px; color:#1a2340; line-height:1.6; margin-top:12px;"><strong>Forms you already own:</strong> <em>est, sunt, erat</em> (esse). <em>patriam</em> (accusative singular, 1st decl., Module 4). The phrases <em>in forō</em> and <em>in periculō</em> use the same &ldquo;in + noun&rdquo; reading chunk from yesterday &mdash; treat each as a glossed unit meaning &ldquo;in the Forum&rdquo; and &ldquo;in danger.&rdquo;</div>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; WHAT STONE RECORDS</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Not everything Romans wrote was a book. Most Romans &mdash; including the many who were not wealthy or highly educated &mdash; encountered Latin on stone: gravestones, public buildings, military equipment. A typical Roman gravestone followed a pattern: the abbreviation <em>D.M.</em> (<em>Dis Manibus</em>, &ldquo;to the divine shades&rdquo;), then the name, then <em>vixit annos</em> (&ldquo;lived ___ years&rdquo;). It was as standardized as &ldquo;R.I.P.&rdquo; today. Stone survives because it is harder than time &mdash; the same grammar you are learning carried a general's propaganda and an ordinary family's grief alike.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9989; CHECK YOUR UNDERSTANDING</div>
+            <div class="widget-question">Apply the reader's checklist to the passage and the inscription pattern above.</div>
+            <div class="widget-row" data-correct="a" data-hint="Which noun is nominative and which case shows possession?">
+                <div class="widget-row-prompt">In <em>Senatus Rōmānus in forō est</em>, what is the subject, and how do you know?</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Right &mdash; 'Senatus Rōmānus' is nominative, so it is the subject: 'The Roman Senate is in the Forum.'">Senatus Rōmānus &mdash; it is nominative</button>
+                    <button data-choice="b" data-fb="Not quite &mdash; 'forō' is inside the glossed 'in + noun' chunk, not the subject.">forō &mdash; it comes right before the verb</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="b" data-hint="Which ending marks the direct object of amābat?">
+                <div class="widget-row-prompt">In <em>Cicero patriam amābat</em>, what is the direct object?</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; 'Cicero' is the subject (nominative), not the object.">Cicero</button>
+                    <button data-choice="b" data-fb="Right &mdash; 'patriam' ends in -am, the accusative singular ending: Cicero loved his homeland.">patriam</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="c" data-hint="Who typically commissions a gravestone, and for what purpose?">
+                <div class="widget-row-prompt">A Roman inscription that begins <em>D.M.</em> and ends with <em>vixit annos</em> is most likely&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; a battle report would not use the 'to the divine shades' formula.">a general's battle report</button>
+                    <button data-choice="b" data-fb="Not quite &mdash; a law court speech was spoken, not carved on stone with this formula.">a speech delivered in the Forum</button>
+                    <button data-choice="c" data-fb="Right &mdash; D.M. and vixit annos are the standard formula of a Roman funerary (gravestone) inscription.">a funerary (grave) inscription</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">5</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 14.05 &mdash; Putting It Together</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">You'll review the whole week, read one more short inscription, play the Ludus, and take a self-check before the quiz.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; ONE IDEA TO CARRY OUT</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">The reader's checklist &mdash; verb, subject, object, gloss, translate &mdash; works on any adapted passage, whether it came from a senator's speech or a family's gravestone. The grammar is the same everywhere.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; M/J LATIN, BEGINNING &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 14.04 &middot; Cicero and the Forum</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.flip-card').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var flip = e.target.closest('.ow-flip .flip-card');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === row.dataset.correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

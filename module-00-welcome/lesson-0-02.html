@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>M/J Latin, Beginning &mdash; Lesson 0.02</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .flip-grid { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+    .flip-card { min-width: 150px; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 14px 16px; cursor: pointer; text-align: center; transition: all 0.15s; }
+    .flip-card:hover { border-color: #55C8E8; }
+    .flip-card .front { font-size: 18px; color: #0E1C42; }
+    .flip-card .hint { font-size: 12px; color: #999; margin-top: 4px; }
+    .flip-card .back { display: none; font-size: 15px; color: #1B6A94; margin-top: 8px; border-top: 1px dashed #C5DCE5; padding-top: 8px; }
+    .flip-card.flipped .back { display: block; }
+    .para { border-collapse: collapse; margin: 14px 0; }
+    .para td, .para th { border: 1px solid #C5DCE5; padding: 9px 16px; font-size: 17px; text-align: center; }
+    .para th { background: #0E1C42; color: #fff; font-weight: normal; font-size: 14px; }
+    .para .lab { background: #EEF1F8; color: #0e1c42; }
+    .para .end { color: #c7922c; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">M/J LATIN, BEGINNING</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 0</div>
+        <div style="font-size: 12px; color: #666;">Welcome</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 0.02</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Rome's Afterlife</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Time</div>
+        <div style="font-size: 16px; color: #0e1c42;">about 20 minutes</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 0.02</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Rome's Afterlife</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">How did one language become five languages &mdash; and yet also stay exactly the same?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Rome fell in 476 AD, but Latin didn't disappear &mdash; it split into two paths. Today you'll trace both, and memorize six Latin abbreviations you already see in English every week.</div>
+    </div>
+
+    <!-- OBJECTIVES -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what happened to Latin after the fall of Rome.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> name the modern languages that descended from spoken Latin and explain why they're called &ldquo;Romance languages.&rdquo;</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> recognize and translate six Latin abbreviations that still appear in English every day.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; ONE LANGUAGE, TWO PATHS</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">When the Western Roman Empire collapsed in 476 AD, Latin did not disappear. It split into two paths.</p>
+
+        <div style="display:flex; gap:14px; flex-wrap:wrap; margin:14px 0;">
+            <div style="flex:1; min-width:220px; background:#EEF1F8; border-radius:7px; padding:14px 16px;">
+                <div style="font-size:18px; color:#0e1c42;">Everyday spoken Latin</div>
+                <div style="font-size:15px; color:#666; margin-top:6px;">slowly evolved, region by region, into French, Spanish, Portuguese, Italian, and Romanian &mdash; the <strong>Romance languages</strong></div>
+            </div>
+            <div style="flex:1; min-width:220px; background:#E8F6FB; border-radius:7px; padding:14px 16px;">
+                <div style="font-size:18px; color:#0e1c42;">Written, scholarly Latin</div>
+                <div style="font-size:15px; color:#666; margin-top:6px;">stayed the same for centuries &mdash; a shared language for the Church, universities, and royal courts across borders</div>
+            </div>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Because scholarly Latin held so steady, a monk in Ireland around 800 AD and a scholar in Bologna, Italy, around 1200 AD could both read the very same Latin text without confusion &mdash; even though the everyday languages spoken around them were completely different.</p>
+        <div style="background:#E8F6FB; border-left:5px solid #2196D0; border-radius:6px; padding:12px 16px; font-size:16px; color:#1a2340; line-height:1.6;">&#128161; <strong>Heads-up:</strong> &ldquo;Romance&rdquo; here has nothing to do with love stories. It comes from <em>Romanus</em>, &ldquo;Roman.&rdquo; A Romance language is simply one descended from Roman speech.</div>
+    </div>
+
+    <!-- MEMORY WORK -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 10px;">&#127925; MEMORY WORK &middot; SIX ABBREVIATIONS YOU ALREADY USE</div>
+        <div style="font-size: 17px; color: #1a2340; line-height: 1.6; margin-bottom: 10px;">These six Latin abbreviations turn up in English writing constantly. Memorize all six &mdash; you'll meet them again on the Module 0 quiz, and for the rest of your life after that.</div>
+        <table class="para">
+            <tr><th>Abbreviation</th><th>Full Latin Form</th><th>Translation</th></tr>
+            <tr><td class="lab">etc.</td><td><em>et cetera</em></td><td>&ldquo;and the rest&rdquo;</td></tr>
+            <tr><td class="lab">i.e.</td><td><em>id est</em></td><td>&ldquo;that is&rdquo;</td></tr>
+            <tr><td class="lab">e.g.</td><td><em>exempli gratia</em></td><td>&ldquo;for the sake of an example&rdquo;</td></tr>
+            <tr><td class="lab">A.M.</td><td><em>ante meridiem</em></td><td>&ldquo;before midday&rdquo;</td></tr>
+            <tr><td class="lab">P.M.</td><td><em>post meridiem</em></td><td>&ldquo;after midday&rdquo;</td></tr>
+            <tr><td class="lab">vs.</td><td><em>versus</em></td><td>&ldquo;against&rdquo;</td></tr>
+        </table>
+        <div style="font-size: 15px; color: #666; line-height: 1.55;">Say each one aloud as <strong>abbreviation &rarr; full Latin &rarr; meaning</strong>: &ldquo;etc. &rarr; et cetera &rarr; and the rest&hellip; i.e. &rarr; id est &rarr; that is&hellip;&rdquo; and on through all six. Then say them in reverse order.</div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; DERIVATIVE MINUTE</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;"><strong>et cetera &rarr; etc.</strong> <em>Et</em> means &ldquo;and&rdquo; (it appears unchanged in modern French as <em>et</em>), and <em>cetera</em> means &ldquo;the remaining things.&rdquo; Every time you write <em>etc.</em> in an essay, you are writing Latin.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;"><strong>versus &rarr; vs.</strong> This Latin preposition means &ldquo;against&rdquo; or &ldquo;turned toward.&rdquo; It entered English legal language directly &mdash; we still say &ldquo;Smith versus Jones&rdquo; in a lawsuit. It connects to the Latin verb <em>vertere</em>, &ldquo;to turn,&rdquo; which also gives us <em>convert</em>, <em>divert</em>, and <em>reverse</em>.</p>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#128173; QUICK CHECK-IN &middot; NO WRONG ANSWER</div>
+            <div class="widget-question">Which of these six abbreviations did you already know before today?</div>
+            <div class="widget-options">
+                <button data-response="Nice &mdash; you already had a head start. Today just fills in the full Latin behind what you already knew.">I knew all six already.</button>
+                <button data-response="That's a normal starting point. The chant above is exactly how the rest lock in &mdash; say it a few more times today.">I knew a couple of them.</button>
+                <button data-response="That's completely fine &mdash; that's why we're memorizing them right now, on day one. Say the chant above out loud two or three times.">These are mostly new to me.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; CHECK YOUR UNDERSTANDING</div>
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9989; MATCH THE ABBREVIATION TO ITS MEANING</div>
+            <div class="widget-question">Choose the correct translation for each abbreviation.</div>
+            <div class="widget-row" data-correct="a" data-hint="Think of a shopping list that trails off after a few items.">
+                <div class="widget-row-prompt">etc.</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Right &mdash; etc. (et cetera) means &ldquo;and the rest.&rdquo;">and the rest</button>
+                    <button data-choice="b" data-fb="Not quite &mdash; that's P.M. (post meridiem). etc. means &ldquo;and the rest.&rdquo;">after midday</button>
+                    <button data-choice="c" data-fb="Not quite &mdash; that's i.e. (id est). etc. means &ldquo;and the rest.&rdquo;">that is</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="b" data-hint="It introduces a restatement or clarification.">
+                <div class="widget-row-prompt">i.e.</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; that's etc. (et cetera). i.e. means &ldquo;that is.&rdquo;">and the rest</button>
+                    <button data-choice="b" data-fb="Right &mdash; i.e. (id est) means &ldquo;that is.&rdquo;">that is</button>
+                    <button data-choice="c" data-fb="Not quite &mdash; that's vs. (versus). i.e. means &ldquo;that is.&rdquo;">against</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="c" data-hint="It introduces an example, not a restatement.">
+                <div class="widget-row-prompt">e.g.</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; that's vs. (versus). e.g. means &ldquo;for the sake of an example.&rdquo;">against</button>
+                    <button data-choice="b" data-fb="Not quite &mdash; that's P.M. (post meridiem). e.g. means &ldquo;for the sake of an example.&rdquo;">after midday</button>
+                    <button data-choice="c" data-fb="Right &mdash; e.g. (exempli gratia) means &ldquo;for the sake of an example.&rdquo;">for the sake of an example</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="b" data-hint="Courts use this one for the name of a lawsuit.">
+                <div class="widget-row-prompt">vs.</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; that's i.e. (id est). vs. means &ldquo;against.&rdquo;">that is</button>
+                    <button data-choice="b" data-fb="Right &mdash; vs. (versus) means &ldquo;against.&rdquo;">against</button>
+                    <button data-choice="c" data-fb="Not quite &mdash; that's etc. (et cetera). vs. means &ldquo;against.&rdquo;">and the rest</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 0.03 &mdash; Latin in English</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">You'll see the two historical roads Latin vocabulary took into English &mdash; and find out just how much of your everyday speech is Latin in disguise.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; ONE IDEA TO CARRY OUT</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;"><strong>etc., i.e., e.g., A.M., P.M., vs.</strong> &mdash; six Latin abbreviations, one meaning each. You now know all six for good.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; M/J LATIN, BEGINNING &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 0.02 &middot; Rome's Afterlife</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.flip-card').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var flip = e.target.closest('.ow-flip .flip-card');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === row.dataset.correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

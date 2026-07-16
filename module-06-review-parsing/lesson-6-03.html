@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>M/J Latin, Beginning &mdash; Lesson 6.03</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .flip-grid { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+    .flip-card { min-width: 150px; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 14px 16px; cursor: pointer; text-align: center; transition: all 0.15s; }
+    .flip-card:hover { border-color: #55C8E8; }
+    .flip-card .front { font-size: 18px; color: #0E1C42; }
+    .flip-card .hint { font-size: 12px; color: #999; margin-top: 4px; }
+    .flip-card .back { display: none; font-size: 15px; color: #1B6A94; margin-top: 8px; border-top: 1px dashed #C5DCE5; padding-top: 8px; }
+    .flip-card.flipped .back { display: block; }
+    .para { border-collapse: collapse; margin: 14px 0; }
+    .para td, .para th { border: 1px solid #C5DCE5; padding: 9px 16px; font-size: 17px; text-align: center; }
+    .para th { background: #0E1C42; color: #fff; font-weight: normal; font-size: 14px; }
+    .para .lab { background: #EEF1F8; color: #0e1c42; }
+    .para .end { color: #c7922c; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">M/J LATIN, BEGINNING</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 6</div>
+        <div style="font-size: 12px; color: #666;">Review and Parsing</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 6.03</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Reading the Roman Map</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Time</div>
+        <div style="font-size: 16px; color: #0e1c42;">about 20 minutes</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 6.03</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Reading the Roman Map</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">How did the Romans talk about their world?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Roman geography gives you excellent parsing practice, because the sentences are short and declarative &mdash; a place, a fact, a claim. Today you parse full sentences about the Roman Mediterranean, and see how two of your Latin words became English ones.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; MARE NOSTRUM</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The Romans called the Mediterranean Sea <em>Mare Nostrum</em> &mdash; &ldquo;Our Sea.&rdquo; By the height of the empire, Rome controlled nearly the entire coastline around it: North Africa, Spain, Gaul, Italy, Greece, and the eastern provinces. To a Roman, the Mediterranean was not a boundary between peoples &mdash; it was a Roman lake, a highway connecting the provinces.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Sailors &mdash; <em>nautae</em> &mdash; were essential figures in this world, carrying goods and people between provinces. When Roman writers described geography, their sentences were built almost entirely from the words you already know: places, <em>esse</em>, <em>amat</em>, and a short list of particles and prepositions.</p>
+        <div style="background:#EEF1F8; border-radius:7px; padding:16px 18px; font-size:19px; color:#0e1c42; line-height:1.7; margin-bottom:10px;">
+            Rōma non est provincia; Italia est provincia magna. <span style="color:#666; font-size:15px; font-style: normal;">(magna = great, given)</span>
+        </div>
+        <div style="background:#FFFFFF; border:1px solid #D0D9E8; border-left:3px solid #2A9D5C; border-radius:4px; padding:12px 16px; font-size:16px; color:#1a2340; line-height:1.6;">
+            <strong>Parse it:</strong> Rōma = 1st decl., nom. sg., subject. Italia = 1st decl., nom. sg., subject. Provincia (both times) = 1st decl., nom. sg., predicate nominative.<br>
+            <span style="color:#666; font-size:15px;">&ldquo;Rome is not a province; Italy is a great province.&rdquo; Two nominatives, two different jobs &mdash; both linked by <em>esse</em>.</span>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; PARSE THE MAP</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 4px 0;">These sentences mix singular and plural, subject and object. Parse each bold noun.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9989; CHECK YOUR UNDERSTANDING</div>
+            <div class="widget-question">Parse the bold noun: give its case, number, and function.</div>
+            <div class="widget-row" data-correct="b" data-hint="Nautae ends in -ae and performs amant's action.">
+                <div class="widget-row-prompt"><strong>Nautae</strong> Italiam amant.</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Nautae isn't receiving the action here &mdash; it's performing amant. That makes it the subject, not a direct object.">Nom. pl., direct object</button>
+                    <button data-choice="b" data-fb="Right &mdash; nautae is nominative plural, performing the verb: subject. 'The sailors love Italy.'">Nom. pl., subject</button>
+                    <button data-choice="c" data-fb="The -ae ending here is nominative, not accusative &mdash; and it's plural, not singular.">Acc. sg., direct object</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="a" data-hint="Provincias follows the transitive verb amant directly.">
+                <div class="widget-row-prompt">Puellae <strong>provinciās</strong> amant.</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Right &mdash; provinciās is accusative plural, receiving the action of amant: direct object.">Acc. pl., direct object</button>
+                    <button data-choice="b" data-fb="No preposition sits in front of provinciās here &mdash; it's the direct object of amant.">Acc. pl., object of a preposition</button>
+                    <button data-choice="c" data-fb="The -ās ending is accusative, not nominative.">Nom. pl., subject</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="c" data-hint="Ad + accusative marks the object of a preposition.">
+                <div class="widget-row-prompt">Copiae ad <strong>Britanniam</strong> sunt.</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="There's no transitive verb like amat here &mdash; the preposition ad governs Britanniam.">Acc. sg., direct object</button>
+                    <button data-choice="b" data-fb="Britanniam is accusative, but it isn't performing an action &mdash; it follows the preposition ad.">Nom. sg., subject</button>
+                    <button data-choice="c" data-fb="Right &mdash; Britanniam is accusative singular, following the preposition ad: object of a preposition. 'The troops are near Britain.'">Acc. sg., object of a preposition</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="a" data-hint="Provinciae stands alone as the subject here &mdash; nominative plural.">
+                <div class="widget-row-prompt"><strong>Provinciae</strong> multae sunt. <span style="color:#999;">(multae = many, given)</span></div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Right &mdash; provinciae is nominative plural, subject of sunt. 'The provinces are many.'">Nom. pl., subject</button>
+                    <button data-choice="b" data-fb="There's no accusative -ās ending here &mdash; provinciae ends in -ae.">Acc. pl., direct object</button>
+                    <button data-choice="c" data-fb="The -ae ending signals plural, not singular.">Nom. sg., subject</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- DERIVATIVE MINUTE -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; DERIVATIVE MINUTE</div>
+        <div class="optima-widget ow-flip">
+            <div class="widget-kicker">&#128064; TAP TO FLIP &middot; SELF-QUIZ</div>
+            <div class="flip-grid">
+                <div class="flip-card"><div class="front">nauta</div><div class="hint">tap to reveal</div><div class="back"><strong>nautical, astronaut</strong> &mdash; astro (star) + nauta (sailor) = &ldquo;star sailor.&rdquo; Even <strong>cosmonaut</strong> uses the Greek equivalent of the same idea.</div></div>
+                <div class="flip-card"><div class="front">via</div><div class="hint">tap to reveal</div><div class="back"><strong>via, viaduct, trivial</strong> &mdash; a <em>trivium</em> was where three roads (<em>tri</em> + <em>via</em>) met: a public crossroads where gossip circulated. That's why unimportant chatter became &ldquo;trivial.&rdquo;</div></div>
+            </div>
+            <button class="widget-reset">Reset all</button>
+        </div>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">4</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lesson 6.04 &mdash; The Full Checklist</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">You'll get a five-step protocol for parsing any sentence you meet, and put it to work on harder, multi-clause practice.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; ONE IDEA TO CARRY OUT</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Roman geography sentences are built from the same small toolkit you already own: nouns, <em>esse</em>, <em>amat</em>, and a handful of particles and prepositions. You can already read them.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; M/J LATIN, BEGINNING &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 6.03 &middot; Reading the Roman Map</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.flip-card').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var flip = e.target.closest('.ow-flip .flip-card');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === row.dataset.correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>M/J Latin, Beginning &mdash; Lesson 2.05</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .flip-grid { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+    .flip-card { min-width: 150px; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 14px 16px; cursor: pointer; text-align: center; transition: all 0.15s; }
+    .flip-card:hover { border-color: #55C8E8; }
+    .flip-card .front { font-size: 18px; color: #0E1C42; }
+    .flip-card .hint { font-size: 12px; color: #999; margin-top: 4px; }
+    .flip-card .back { display: none; font-size: 15px; color: #1B6A94; margin-top: 8px; border-top: 1px dashed #C5DCE5; padding-top: 8px; }
+    .flip-card.flipped .back { display: block; }
+    .para { border-collapse: collapse; margin: 14px 0; }
+    .para td, .para th { border: 1px solid #C5DCE5; padding: 9px 16px; font-size: 17px; text-align: center; }
+    .para th { background: #0E1C42; color: #fff; font-weight: normal; font-size: 14px; }
+    .para .lab { background: #EEF1F8; color: #0e1c42; }
+    .para .end { color: #c7922c; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">M/J LATIN, BEGINNING</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">The Inflection Principle</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 2.05</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Putting Rome Into Words</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Time</div>
+        <div style="font-size: 16px; color: #0e1c42;">about 20 minutes</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 2.05</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Putting Rome Into Words</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Are you ready to read real Latin sentences about the Roman world?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">No new rules today &mdash; just pulling the whole week together: inflection, the <em>esse</em> paradigm, and the predicate nominative. Read a short passage of genuine Latin sentences, play the Ludus, and take a self-check before the Module 2 Quiz.</div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE WEEK ON ONE PAGE</div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:10px;">
+            <div style="flex:1; min-width:220px; background:#EEF1F8; border-radius:7px; padding:12px 16px; font-size:16px; color:#1a2340;"><strong>Inflection:</strong> Latin marks a noun's job by changing its ending, not by word order &mdash; the same instinct English keeps alive in pronouns like <em>he/him</em>.</div>
+            <div style="flex:1; min-width:220px; background:#E8F6FB; border-radius:7px; padding:12px 16px; font-size:16px; color:#1a2340;"><strong><em>Esse</em>:</strong> sum, es, est, sumus, estis, sunt &mdash; the most irregular, most essential verb in the language.</div>
+        </div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:10px;">
+            <div style="flex:1; min-width:220px; background:#EEF1F8; border-radius:7px; padding:12px 16px; font-size:16px; color:#1a2340;"><strong>Predicate nominative:</strong> when <em>esse</em> links two nouns, both take the nominative case &mdash; subject and predicate are the same thing.</div>
+            <div style="flex:1; min-width:220px; background:#E8F6FB; border-radius:7px; padding:12px 16px; font-size:16px; color:#1a2340;"><strong>Vocabulary:</strong> Italia, Graecia, Gallia, Britannia, Hispania, Sicilia, Africa, Roma, insula, provincia.</div>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; A SHORT ROMAN READING</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Read each sentence below the way a Roman geographer might have written it &mdash; find the subject, find the predicate nominative, and confirm <em>est</em> or <em>sunt</em> matches the subject before you translate.</p>
+        <div style="background:#EEF1F8; border-radius:7px; padding:16px 18px; font-size:19px; color:#0e1c42; line-height:2.0; margin-bottom:10px;">
+            <strong>Roma provincia est.</strong> &middot; <strong>Italia provincia est.</strong> &middot; <strong>Gallia provincia est.</strong> &middot; <strong>Sicilia insula est.</strong> &middot; <strong>Britannia provincia est.</strong> &middot; <strong>Hispania provincia est.</strong>
+        </div>
+        <div style="background:#FFFFFF; border:1px solid #D0D9E8; border-left:3px solid #2A9D5C; border-radius:4px; padding:12px 16px; font-size:16px; color:#1a2340; line-height:1.6; margin-bottom:10px;">
+            <strong>Reader's checklist:</strong> for each sentence, can you (1) name the subject, (2) name the predicate nominative, and (3) give an English translation? Try all five before checking your work with a partner or your teacher.
+        </div>
+        <p style="font-size: 16px; color: #1a2340; line-height: 1.6; margin: 10px 0 0 0;">One more sentence worth knowing, straight from your Memory Work: <em>Insulae provinciae sunt.</em> &mdash; &ldquo;Islands are provinces.&rdquo; Both words here are <strong>plural</strong> forms, which is why the verb is <em>sunt</em> and not <em>est</em>. You'll study exactly how Latin builds plural endings starting next module &mdash; for now, treat this sentence as a complete memorized unit.</p>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; SELF-CHECK</div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 4px 0;">If these feel easy, you're ready for the quiz. If not, replay a lesson or the Ludus first.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9989; ARE YOU READY?</div>
+            <div class="widget-question">Answer each one, then read the feedback.</div>
+            <div class="widget-row" data-correct="b" data-hint="Inflection means the ending changes to show the job — not the position in the sentence.">
+                <div class="widget-row-prompt">Inflection is best described as&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; that's what English relies on. Inflection is Latin's alternative: the ending, not the position, signals the job.">the rule that word order shows a noun's job</button>
+                    <button data-choice="b" data-fb="Right &mdash; inflection is the systematic change of a word's ending to signal its grammatical job.">the systematic change of a word's ending to signal its job</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="a" data-hint="Sunt is the 3rd person plural form.">
+                <div class="widget-row-prompt">The correct form of <em>esse</em> for &ldquo;they are&rdquo; is&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Right &mdash; sunt is 3rd person plural: they are.">sunt</button>
+                    <button data-choice="b" data-fb="Not quite &mdash; est is 3rd person singular (he/she/it is). Sunt is the plural form: they are.">est</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="b" data-hint="No action is happening — the noun after est renames the subject.">
+                <div class="widget-row-prompt">In <em>Britannia provincia est</em>, the word <em>provincia</em> is&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Not quite &mdash; a direct object receives an action, but esse links, it doesn't act. Provincia renames Britannia.">a direct object</button>
+                    <button data-choice="b" data-fb="Right &mdash; provincia follows the linking verb est and renames the subject Britannia. That's a predicate nominative.">a predicate nominative</button>
+                </div>
+            </div>
+            <div class="widget-row" data-correct="a" data-hint="Sicilia is the subject here — it needs a matching predicate noun.">
+                <div class="widget-row-prompt">The correct way to say &ldquo;Sicily is an island&rdquo; is&hellip;</div>
+                <div class="widget-options">
+                    <button data-choice="a" data-fb="Right &mdash; Sicilia (subject) + insula (predicate nominative) + est.">Sicilia insula est.</button>
+                    <button data-choice="b" data-fb="Not quite &mdash; that reverses the natural subject-first order this module has used. Sicilia insula est is the pattern you've practiced.">Insula est Sicilia.</button>
+                </div>
+            </div>
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- LUDUS -->
+    <div style="background: #FFFFFF; border-top: 3px solid #2196D0; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #1B6A94; margin-bottom: 12px;">&#127918; PLAY THE LUDUS</div>
+        <div style="font-size: 18px; color: #0e1c42; margin-bottom: 6px;"><strong>Ludus II &middot; <em>Esse</em></strong></div>
+        <p style="font-size: 16px; color: #1a2340; line-height: 1.6; margin: 0;">A quick timed game: match each form of <em>esse</em> to its meaning, fill in the missing form, and match Roman place names to their English names. Play as many times as you like &mdash; your <strong>best</strong> score counts. It's the fastest way to make this week's material automatic before the quiz.</p>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom:12px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 15px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">&#10003;</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Module 2 Quiz</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A short auto-graded quiz on inflection, the <em>esse</em> paradigm, predicate nominative, and this module's Roman geographic vocabulary.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Module 3 &mdash; next up</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">You'll finally learn how Latin builds those noun endings you've been treating as fixed vocabulary &mdash; starting with the nominative and accusative cases.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; ONE IDEA TO CARRY OUT</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">You can now read and build genuine Latin sentences: a subject, a predicate nominative, and the right form of <em>esse</em> holding them together. That's the inflection principle in action. On to the quiz!</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; M/J LATIN, BEGINNING &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 2.05 &middot; Putting Rome Into Words</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.flip-card').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var flip = e.target.closest('.ow-flip .flip-card');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === row.dataset.correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
